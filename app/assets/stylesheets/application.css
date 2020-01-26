@@ -13,3 +13,83 @@
  *= require_tree .
  *= require_self
  */
+.navbar{
+	background-color: #0099FF;
+	height: 70px;
+	margin-bottom: 70px;
+}
+
+.navbar-brand{
+	border-radius: 20px;
+}
+
+img {
+     -webkit-filter: brightness(0.4);
+     -moz-filter: brightness(0.4);
+     -o-filter: brightness(0.4);
+     -ms-filter: brightness(0.4);
+     filter: brightness(100);
+}
+
+.menu-btn{
+	vertical-align:  middle;
+}
+
+.menu-font{
+	background-color: white;
+}
+
+.header{
+	padding-bottom: 70px;
+}
+
+.sign-form{
+	padding: 100px;
+	width: 40%;
+	border-radius: 100px;
+	margin: 150px auto;
+}
+.field{
+	height: 50px;
+}
+.name-form{
+	width: 150px;
+	border-radius: 15px;
+	height: 30px;
+}
+
+.kana-form{
+	width: 150px;
+	border-radius: 15px;
+	height: 30px;
+}
+
+.mail-form{
+	width: 250px;
+	border-radius: 15px;
+	height: 30px;
+}
+
+.career-form{
+	width: 45px;
+	border-radius: 10px;
+	height: 30px;
+}
+
+.age-form{
+	width: 45px;
+	border-radius: 10px;
+	height: 30px;
+}
+
+.pass-form{
+	width: 150px;
+	border-radius: 15px;
+	height: 30px;
+}
+.start_view{
+	background-image: url(camera.jpg);
+	background-size: cover;
+	width: 100%;
+
+}
