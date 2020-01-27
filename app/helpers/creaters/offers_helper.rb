@@ -1,0 +1,2 @@
+module Creaters::OffersHelper
+end

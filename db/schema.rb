@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_20_103650) do
+ActiveRecord::Schema.define(version: 2020_01_27_043732) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string "title"
+    t.string "video"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "creater_id"
+  end
 
   create_table "creaters", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -20,6 +28,15 @@ ActiveRecord::Schema.define(version: 2020_01_20_103650) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "kana_name"
+    t.string "address"
+    t.text "introduction"
+    t.text "skill"
+    t.integer "career", default: 0, null: false
+    t.integer "cost", default: 0, null: false
+    t.integer "creater_status", default: 0, null: false
+    t.integer "age"
     t.index ["email"], name: "index_creaters_on_email", unique: true
     t.index ["reset_password_token"], name: "index_creaters_on_reset_password_token", unique: true
   end
@@ -32,8 +49,46 @@ ActiveRecord::Schema.define(version: 2020_01_20_103650) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "employer_name", default: "", null: false
+    t.text "summary"
+    t.integer "employer_status", default: 0, null: false
     t.index ["email"], name: "index_employers_on_email", unique: true
     t.index ["reset_password_token"], name: "index_employers_on_reset_password_token", unique: true
+  end
+
+  create_table "offers", force: :cascade do |t|
+    t.integer "employer_id"
+    t.string "title", default: "", null: false
+    t.text "content", default: "", null: false
+    t.date "deadline", null: false
+    t.date "delivery_date", null: false
+    t.integer "wage", null: false
+    t.string "payment_method", default: "", null: false
+    t.integer "payday", null: false
+    t.integer "offer_status", default: 0, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.integer "creater_id", null: false
+    t.integer "project_status", default: 0, null: false
+    t.text "demand", default: "", null: false
+    t.date "time_limit", null: false
+    t.integer "reward", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "requests", force: :cascade do |t|
+    t.integer "creater_id", null: false
+    t.integer "offer_id", null: false
+    t.text "opinion", default: "", null: false
+    t.integer "request_status", default: 0, null: false
+    t.integer "hope_salary", default: 0, null: false
+    t.integer "production_span", default: 1, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

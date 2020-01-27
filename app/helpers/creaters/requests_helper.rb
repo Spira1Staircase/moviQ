@@ -1,0 +1,2 @@
+module Creaters::RequestsHelper
+end
