@@ -55,9 +55,9 @@ ActiveRecord::Schema.define(version: 2020_02_13_104101) do
     t.text "content"
     t.datetime "deadline", null: false
     t.datetime "delivery_date", null: false
-    t.integer "wage", null: false
+    t.integer "wage"
     t.string "payment_method", default: "", null: false
-    t.integer "payday", null: false
+    t.integer "payday"
     t.integer "offer_status", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -70,7 +70,7 @@ ActiveRecord::Schema.define(version: 2020_02_13_104101) do
     t.integer "project_status", default: 0, null: false
     t.text "demand"
     t.datetime "time_limit", null: false
-    t.integer "reward", null: false
+    t.integer "reward"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

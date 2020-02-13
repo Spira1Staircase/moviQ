@@ -6,9 +6,9 @@ class CreateOffers < ActiveRecord::Migration[5.2]
       t.text    :content
       t.datetime    :deadline, null: false
       t.datetime    :delivery_date, null: false
-      t.integer :wage, null: false, default: ""
+      t.integer :wage
       t.string  :payment_method, null: false, default: ""
-      t.integer :payday, null: false, default: ""
+      t.integer :payday
       t.integer :offer_status, null: false, default: 0
       t.timestamps
     end
