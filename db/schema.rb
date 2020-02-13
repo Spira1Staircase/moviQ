@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_13_091757) do
+ActiveRecord::Schema.define(version: 2020_02_13_092556) do
 
   create_table "creaters", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2020_02_13_091757) do
   create_table "offers", force: :cascade do |t|
     t.integer "employer_id"
     t.string "title", default: "", null: false
-    t.text "content", default: "", null: false
+    t.text "content"
     t.date "deadline", null: false
     t.date "delivery_date", null: false
     t.integer "wage", null: false
