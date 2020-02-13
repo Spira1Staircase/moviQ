@@ -3,7 +3,7 @@
         <%= render 'shared/header' %>
     </div>
     <div class="row offer-form">
-    	<h2 class="offer-title">発注内容編集</h2>
+        <h2 class="offer-title">発注内容編集</h2>
         <% if @offer.errors.any? %>
         <div class="alert alert-warning">
             <ul>
@@ -67,9 +67,9 @@
             </table>
         </div>
         <div class="offer-btn">
-        <%= f.submit "更新する", class: "btn btn-info offer-update" %>
-        <%= f.submit "削除する", class: "btn btn-danger offer-destroy" %>
-        <% end %>
+            <%= f.submit "更新する", class: "btn btn-info offer-update" %>
+            <%= f.submit "削除する", class: "btn btn-danger offer-destroy" %>
+            <% end %>
         </div>
     </div>
 </div>

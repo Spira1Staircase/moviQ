@@ -1,7 +1,8 @@
 class Employers::OffersController < ApplicationController
 	before_action :authenticate_employer!
 	def index
-		@offers = Offer.all
+		@employer = current_employer
+		@offers = @employer.offers.page(params[:page]).per(10)
 	end
 	def show
 		@employer = current_employer
@@ -29,13 +30,13 @@ class Employers::OffersController < ApplicationController
 	def update
 		@offer = Offer.find(params[:id])
 		@offer.update(offer_params)
-		flash[:success] = 'Success'
+		flash[:success] = '更新しました'
 		redirect_to employers_offer_path(@offer)
 	end
 	def destroy
 		@offer = Offer.find(params[:id])
 		@offer.destroy
-		flash[:success] = 'Success'
+		flash[:success] = '削除しました'
 		redirect_to employers_offers_path
 	end
 	private

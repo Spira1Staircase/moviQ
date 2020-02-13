@@ -2,18 +2,13 @@ class Employers::RequestsController < ApplicationController
 	before_action :authenticate_employer!
 	def index
 		@offer = Offer.find(params[:offer_id])
+		@requests = @offer.requests.page(params[:page]).per(10)
 	end
 	def show
 		@employer = current_employer
 		@request = Request.find(params[:id])
 		@offer = Offer.find(params[:offer_id])
 		@creater = Creater.find(@request.creater_id)
-	end
-	def edit
-		
-	end
-	def update
-		
 	end
 	def destroy
 		@request = Request.find(params[:id])

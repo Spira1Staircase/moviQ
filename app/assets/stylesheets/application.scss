@@ -23,8 +23,21 @@ body {
     background-image: image-url("movie.jpg");
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-position: center;
+}
+img {
+    -webkit-filter: brightness(0.4);
+    -moz-filter: brightness(0.4);
+    -o-filter: brightness(0.4);
+    -ms-filter: brightness(0.4);
+    filter: brightness(100);
+}
+.alert {
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 .flash{
     width: 100%;
@@ -41,14 +54,6 @@ body {
     border-radius: 20px;
 }
 
-img {
-    -webkit-filter: brightness(0.4);
-    -moz-filter: brightness(0.4);
-    -o-filter: brightness(0.4);
-    -ms-filter: brightness(0.4);
-    filter: brightness(100);
-}
-
 .menu-btn {
     vertical-align: middle;
 }
@@ -62,11 +67,9 @@ img {
 }
 
 .sign-form {
-	background-color: rgba(255, 255, 255, 0.8);
     padding: 100px;
-    width: 40%;
-    border-radius: 100px;
-    margin: 50px auto;
+    width: 50%;
+    margin: 10px auto;
 }
 
 .field {
@@ -130,7 +133,11 @@ rails .pass-form {
 }
 
 .top-box {
-    position: relative;
+    background-image: image-url("shaking.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 112%;
+    background-position: center;
 }
 
 .center-img {
@@ -143,63 +150,62 @@ rails .pass-form {
 }
 
 .creater-box {
-    height: 900px;
+    height: 100%;
     padding: 30px;
-    margin-top: 15%;
+    margin-top: 28%;
     border-radius: 100px;
 }
 
 .creater-invite {
     background-image: image-url("creater.png");
     background-size: cover;
-    border-radius: 150px;
-    height: 300px;
-    width: 300px;
+    height: 305px;
+    width: 310px;
     text-align: center;
     position: absolute;
-    right: 30%;
+    right: -55%;
     top: 17%;
+    margin-top: 75px;
 }
 
 .creater-font {
-    padding-top: 10px;
+    padding-top: 300px;
     color: white;
 }
 
 .employer-invite {
     background-image: image-url("employer.png");
     background-size: cover;
-    border-radius: 150px;
     text-align: center;
-    height: 320px;
-    width: 320px;
+    height: 300px;
+    width: 600px;
     position: absolute;
-    left: 30%;
+    left: -130%;
     top: 17%;
+    margin-top: 75px;
 }
 
 .employer-box {
-    height: 900px;
+    height: 100%;
     padding: 30px;
-    margin-top: 15%;
+    margin-top: 28%;
     border-radius: 100px;
 }
 
 .employer-font {
-    padding-top: 20px;
+    padding-top: 300px;
     color: white;
 }
 
 .container {
     padding-top: 70px;
 }
-
 .emp-menu {
     background-color: #81D4FA;
     background-color: rgba(0, 230, 255, 0.6);
-    height: 350px;
-    width: 40%;
-    margin: 50px;
+    height: 260px;
+    width: 35%;
+    margin: 65px;
     border-radius: 100px;
     vertical-align: middle;
     text-align: center;
@@ -210,7 +216,7 @@ rails .pass-form {
 }
 
 .emp-icon {
-    font-size: 225px;
+    font-size: 135px;
     color: white;
     padding: 10%;
 }
@@ -236,13 +242,13 @@ rails .pass-form {
     background-image: image-url("man.jpg");
     background-size: cover;
     width: 100%;
-    height: 110%;
+    height: 115%;
 }
 
 .emp-cre-box {
     background-color: rgba(255, 255, 255, 0.6);
-    width: 90%;
-    margin: 100px auto 0;
+    height: 700px;
+    margin: 10px auto;
     padding: 50px;
     border-radius: 100px;
 }
@@ -281,38 +287,45 @@ rails .pass-form {
 .offer-form {
     background-color: rgba(255, 255, 255, 0.6);
     width: 90%;
-    margin: auto 0;
+    margin: 10px auto;
+    height: 650px;
     padding: 20px;
     border-radius: 100px;
 }
 
 .title-form {
-    width: 30%;
+    width: 50%;
+    height: 20px;
 }
 
 .content-form {
     width: 600px;
-    height: 400px;
+    height: 230px;
 }
 
 .deadline-form {
     width: 20%;
+    height: 20px;
 }
 
 .delivery-form {
     width: 20%;
+    height: 20px;
 }
 
 .wage-form {
     width: 20%;
+    height: 20px;
 }
 
 .payment-form {
     width: 20%;
+    height: 20px;
 }
 
 .payday-form {
     width: 20%;
+    height: 15px;
 }
 
 .offer-btn {
@@ -325,10 +338,15 @@ rails .pass-form {
     margin: 30px auto;
     padding: 20px;
     border-radius: 100px;
+    height: 90%;
+}
+.emp-offer-all {
+    height: 100%;
+    color: black;
 }
 
 .emp-offer-title {
-    height: 50px;
+    height: 8%;
     color: black;
 }
 
@@ -338,32 +356,32 @@ rails .pass-form {
 }
 
 .emp-offer-deadline {
-    height: 50px;
+    height: 8%;
     color: black;
 }
 
 .emp-offer-delivery {
-    height: 50px;
+    height: 8%;
     color: black;
 }
 
 .emp-offer-wage {
-    height: 50px;
+    height: 8%;
     color: black;
 }
 
 .emp-offer-payment {
-    height: 50px;
+    height: 8%;
     color: black;
 }
 
 .emp-offer-payday {
-    height: 50px;
+    height: 8%;
     color: black;
 }
 
 .emp-offer-status {
-    height: 50px;
+    height: 8%;
     color: black;
 }
 .offer-edit{
@@ -412,7 +430,7 @@ rails .pass-form {
     background-image: image-url("shaking.jpg");
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 112%;
 	background-position: center;
 }
 .request-all{
@@ -435,8 +453,8 @@ rails .pass-form {
 .cre-menu {
     background-color: #81D4FA;
     background-color: rgba(0, 230, 255, 0.6);
-    height: 350px;
-    width: 40%;
+    height: 260px;
+    width: 35%;
     margin: 50px;
     border-radius: 100px;
     vertical-align: middle;
@@ -448,7 +466,7 @@ rails .pass-form {
     color: white;
 }
 .cre-icon {
-    font-size: 225px;
+    font-size: 135px;
     color: white;
     padding: 10%;
 }
@@ -604,7 +622,7 @@ rails .pass-form {
 }
 .cre-box{
     background-color: rgba(255, 255, 255, 0.6);
-    width: 90%;
+    width: 70%;
     height: 750px;
     margin: 0 auto;
     padding: 50px;
@@ -618,4 +636,25 @@ rails .pass-form {
     background-size: cover;
     width: 100%;
     margin-top: 100px;
+}
+.page{
+    margin: 0 auto;
+    text-align: center;
+}
+.top-group{
+    margin: 10px auto;
+    height: 360px;
+    border-radius: 20px;
+}
+.top-text-cre{
+    color: white;
+}
+.top-text-emp{
+    color: white;
+}
+.about-text-emp{
+    margin-top: 200px;
+}
+.about-text-cre{
+    margin-top: 150px;
 }

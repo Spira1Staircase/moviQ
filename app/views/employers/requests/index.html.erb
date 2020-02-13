@@ -11,7 +11,7 @@
                 <th>予定納品日</th>
                 <th>申請状況</th>
             </tr>
-            <% @offer.requests.each do |request| %>
+            <% @requests.each do |request| %>
             <tr>
                 <td>
                     <%= request.creater.name %>
@@ -20,7 +20,8 @@
                     <%= request.hope_salary %>円
                 </td>
                 <td>
-                    契約から<%= request.production_span %>日以内
+                    契約から
+                    <%= request.production_span %>日以内
                 </td>
                 <td>
                     <%= request.request_status%>
@@ -33,5 +34,8 @@
             </tr>
             <% end %>
         </table>
+        <div class="col-xs-12 page">
+            <%= paginate @requests %>
+        </div>
     </div>
 </div>

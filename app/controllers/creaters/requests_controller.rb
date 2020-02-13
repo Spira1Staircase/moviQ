@@ -20,7 +20,7 @@ class Creaters::RequestsController < ApplicationController
 	end
 	def index
 		@creater = current_creater
-		@requests = @creater.requests
+		@requests = @creater.requests.page(params[:page]).per(10)
 	end
 	def edit
 		@creater = current_creater

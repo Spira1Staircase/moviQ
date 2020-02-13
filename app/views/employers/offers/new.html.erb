@@ -1,75 +1,64 @@
 <div class="container">
     <div class="row　header">
         <%= render 'shared/header' %>
-        <%= render 'shared/flash' %>
     </div>
+        <%= render 'shared/flash' %>
     <div class="row offer-form">
-    	<h2 class="offer-title">発注内容</h2>
-        <% if @offer.errors.any? %>
-        <div class="alert alert-warning">
-            <ul>
-                <% @offer.errors.full_messages.each do |message| %>
-                <li>
-                    <%= message %>
-                </li>
-                <% end %>
-            </ul>
-        </div>
-        <% end %>
+        <h3 class="offer-title">発注内容</h3>
         <div class="col-xs-12">
             <table class="table">
                 <%= form_for(@offer, url:employers_offers_path) do |f| %>
-                <tr>
+                <tr class="title-form">
                     <th>タイトル</th>
                     <td>
-                        <%= f.text_field :title, autofocus: true, autocomplete: "delivery_address", class: "title-form" %>
+                        <%= f.text_field :title, autofocus: true, autocomplete: "delivery_address", class: "col-xs-8" %>
                     </td>
                 </tr>
-                <tr>
+                <tr class="offer-text">
                     <th>発注内容</th>
                     <td>
                         <%= f.text_area :content, autofocus: true, autocomplete: "delivery_address", class: "content-form" %>
                     </td>
                 </tr>
-                <tr>
+                <tr class="deadline-form">
                     <th>募集期限</th>
                     <td>
-                        <%= f.date_field :deadline, autofocus: true, autocomplete: "delivery_address", class: "deadline-form" %>
+                        <%= f.date_field :deadline, autofocus: true, autocomplete: "delivery_address", class: "col-xs-4" %>
                     </td>
                 </tr>
-                <tr>
+                <tr class="delivery-form">
                     <th>納品日</th>
                     <td>
-                        <%= f.date_field :delivery_date, autofocus: true, autocomplete: "delivery_address", class: "delivery-form" %>
+                        <%= f.date_field :delivery_date, autofocus: true, autocomplete: "delivery_date", class: "col-xs-4" %>
                     </td>
                 </tr>
-                <tr>
+                <tr class="wage-form">
                     <th>報酬</th>
                     <td>
                         <p>
-                            <%= f.text_field :wage, autofocus: true, autocomplete: "delivery_address", class: "wage-form" %>円
+                            <%= f.text_field :wage, autofocus: true, autocomplete: "delivery_address", class: "col-xs-6" %>円
                         </p>
                     </td>
                 </tr>
-                <tr>
+                <tr class="payment-form">
                     <th>支払い方法</th>
                     <td>
-                        <%= f.text_field :payment_method, autofocus: true, autocomplete: "delivery_address", class: "payment-form" %>
+                        <%= f.text_field :payment_method, autofocus: true, autocomplete: "delivery_address", class: "col-xs-8" %>
                     </td>
                 </tr>
-                <tr>
+                <tr class="payday-form">
                     <th>支払い期日</th>
                     <td>
                         <p>
-                            <%= f.number_field :payday, autofocus: true, autocomplete: "delivery_address", class: "payday-form" %>日以内(納品後)
+                            <%= f.number_field :payday, autofocus: true, autocomplete: "delivery_address", class: "col-xs-4" %>日以内(納品後)
                         </p>
                     </td>
                 </tr>
             </table>
         </div>
         <div class="offer-btn">
-        <%= f.submit "上記内容で登録する", class: "btn btn-primary" %>
-        <% end %>
+            <%= f.submit "上記内容で登録する", class: "btn btn-primary" %>
+            <% end %>
         </div>
     </div>
 </div>

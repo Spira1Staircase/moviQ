@@ -1,7 +1,7 @@
 class Creaters::OffersController < ApplicationController
 	before_action :authenticate_creater!
 	def index
-		@offers = Offer.all
+		@offers = Offer.all.page(params[:page]).per(10)
 	end
 	def show
 		@offer = Offer.find(params[:id])

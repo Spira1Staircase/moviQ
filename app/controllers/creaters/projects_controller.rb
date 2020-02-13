@@ -2,7 +2,7 @@ class Creaters::ProjectsController < ApplicationController
 	before_action :authenticate_creater!
 	def index
 		@creater = current_creater
-		@projects = Project.where(creater_id: current_creater.id)
+		@projects = Project.where(creater_id: current_creater.id).page(params[:page]).per(10)
 	end
 	def show
 		@creater = current_creater
