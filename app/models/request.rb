@@ -6,4 +6,5 @@ class Request < ApplicationRecord
 	validates :opinion, presence: true
 	validates :hope_salary, presence: true
 	validates :production_span, presence: true
+
 end
