@@ -1,6 +1,37 @@
-<div class="container">
-	<div class="row　header">
-	  <%= render 'shared/header' %>
-	</div>
-	クリエイターページ
+<div class="container cre-show">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-6 cre-menu">
+            	<%= link_to creaters_offers_path do %>
+				<p class="cre-menu-font">案件一覧</p>
+				<% end %>
+				<i class="fas fa-search cre-icon"></i>
+            </div>
+
+            <div class="col-xs-6 cre-menu">
+				<%= link_to creaters_requests_path do %>
+				<p class="cre-menu-font">申請一覧</p>
+				<% end %>
+                <i class="far fa-handshake cre-icon"></i>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-6 cre-menu">
+                <%= link_to creaters_projects_path do %>
+				<p class="cre-menu-font">受注案件</p>
+				<% end %>
+                <i class="far fa-list-alt cre-icon"></i>
+            </div>
+            <div class="col-xs-6 cre-menu">
+                <%= link_to edit_creater_path(current_creater) do %>
+				<p class="cre-menu-font">ユーザー設定</p>
+				<% end %>
+                <i class="fas fa-user-cog cre-icon"></i>
+            </div>
+        </div>
+    </div>
 </div>

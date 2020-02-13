@@ -1,0 +1,69 @@
+<div class="container emp-offer">
+    <div class="row">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row emp-offer-box">
+        <div class="col-xs-10">
+            <h2>募集内容</h2>
+            <table class="table">
+                <tr class="emp-offer-title">
+                    <th class="col-xs-2">タイトル</th>
+                    <td class="col-xs-4">
+                        <%= @offer.title %>
+                    </td>
+                </tr>
+                <tr class="emp-offer-content">
+                    <th class="col-xs-2">発注内容</th>
+                    <td class="col-xs-4">
+                        <%= simple_format(@offer.content) %>
+                    </td>
+                </tr>
+                <tr class="emp-offer-deadline">
+                    <th class="col-xs-2">募集期限</th>
+                    <td class="col-xs-4">
+                        <%= @offer.deadline %>
+                    </td>
+                </tr>
+                <tr class="emp-offer-delivery">
+                    <th class="col-xs-2">納品日</th>
+                    <td>
+                        <%= @offer.delivery_date %>
+                    </td>
+                </tr>
+                <tr class="emp-offer-wage">
+                    <th class="col-xs-2">報酬</th>
+                    <td>
+                        <%= @offer.wage%>円
+                    </td>
+                </tr>
+                <tr class="emp-offer-payment">
+                    <th class="col-xs-2">支払い方法</th>
+                    <td>
+                        <%= @offer.payment_method %>
+                    </td>
+                </tr>
+                <tr class="emp-offer-payday">
+                    <th class="col-xs-2">支払い期日</th>
+                    <td>
+                        <%= @offer.payday %>日以内(納品後)
+                    </td>
+                </tr>
+                <tr class="emp-offer-status">
+                    <th class="col-xs-2">発注状況</th>
+                    <td>
+                        <%= @offer.offer_status %>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-xs-2">
+            <%= link_to new_creaters_offer_request_path(@offer) do%>
+            <div class="offer-request">
+                <p class="offer-request-font">申請</p>
+                <i class="far fa-paper-plane offer-request-icon"></i>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>

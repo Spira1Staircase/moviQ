@@ -1,0 +1,64 @@
+<div class="container emp-cre">
+    <div class="row">
+        <%= render 'shared/header' %>
+    </div>
+    <div class="row emp-cre-box">
+        <div class="col-xs-5">
+            <table class="table">
+                <tr class="emp-cre-profile1">
+                    <th class="col-xs-2">お名前(カナ名)</th>
+                    <td class="col-xs-4">
+                        <%= @creater.name %>
+                        <%= @creater.kana_name %>
+                    </td>
+                </tr>
+                <tr class="emp-cre-profile1">
+                    <th class="col-xs-2">メールアドレス</th>
+                    <td class="col-xs-4">
+                        <%= @creater.email %>
+                    </td>
+                </tr>
+                <tr class="emp-cre-profile1">
+                    <th class="col-xs-2">居住地</th>
+                    <td class="col-xs-4">
+                        <%= @creater.address %>
+                    </td>
+                </tr>
+                <tr class="emp-cre-profile1">
+                    <th class="col-xs-2">キャリア</th>
+                    <td>
+                        <%= @creater.career %>
+                    </td>
+                </tr>
+                <tr class="emp-cre-profile1">
+                    <th class="col-xs-2">対応ステータス</th>
+                    <td>
+                        <%= @creater.creater_status%>
+                    </td>
+                </tr>
+                <tr class="emp-cre-profile2">
+                    <th class="col-xs-2">スキル</th>
+                    <td>
+                        <%= simple_format(@creater.skill) %>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-xs-7">
+            <table class="table">
+                <tr class="emp-cre-profile2">
+                    <th class="">自己紹介</th>
+                    <td>
+                        <%= simple_format(@creater.introduction) %>
+                    </td>
+                </tr>
+                <tr class="emp-cre-movie">
+                    <th class="">ポートフォリオ</th>
+                    <td>
+                        <%= @creater.introduction %>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

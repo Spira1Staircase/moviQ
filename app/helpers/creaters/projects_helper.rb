@@ -1,0 +1,2 @@
+module Creaters::ProjectsHelper
+end

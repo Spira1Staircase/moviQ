@@ -1,6 +1,37 @@
 <div class="container">
-	<div class="row　header">
-	  <%= render 'shared/header' %>
-	</div>
-	オーナーページ
+    <div class="row　header">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-6 emp-menu">
+            	<%= link_to employers_creaters_path do %>
+				<p class="emp-menu-font">クリエイターを探す</p>
+				<% end %>
+				<i class="far fa-address-card emp-icon"></i>
+            </div>
+
+            <div class="col-xs-6 emp-menu">
+				<%= link_to new_employers_offer_path do %>
+				<p class="emp-menu-font">仕事を提案</p>
+				<% end %>
+                <i class="fas fa-briefcase emp-icon"></i>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-6 emp-menu">
+                <%= link_to employers_offers_path do %>
+				<p class="emp-menu-font">マイオファー</p>
+				<% end %>
+                <i class="far fa-list-alt emp-icon"></i>
+            </div>
+            <div class="col-xs-6 emp-menu">
+                <%= link_to edit_employer_path(current_employer) do %>
+				<p class="emp-menu-font">クライアント設定</p>
+				<% end %>
+                <i class="fas fa-user-cog emp-icon"></i>
+            </div>
+        </div>
+    </div>
 </div>

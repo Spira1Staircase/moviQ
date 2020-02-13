@@ -10,15 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_27_043732) do
-
-  create_table "articles", force: :cascade do |t|
-    t.string "title"
-    t.string "video"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "creater_id"
-  end
+ActiveRecord::Schema.define(version: 2020_02_13_021535) do
 
   create_table "creaters", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -37,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_01_27_043732) do
     t.integer "cost", default: 0, null: false
     t.integer "creater_status", default: 0, null: false
     t.integer "age"
+    t.string "youtube_url"
     t.index ["email"], name: "index_creaters_on_email", unique: true
     t.index ["reset_password_token"], name: "index_creaters_on_reset_password_token", unique: true
   end
@@ -78,6 +71,8 @@ ActiveRecord::Schema.define(version: 2020_01_27_043732) do
     t.integer "reward", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "offer_id"
+    t.integer "request_id"
   end
 
   create_table "requests", force: :cascade do |t|

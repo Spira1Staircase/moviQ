@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+<body>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         <%= content_for?(:title) ? yield(:title) : "MoviQ" %>
     </title>
+    <script src="https://kit.fontawesome.com/27edb36349.js" crossorigin="anonymous"></script>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -21,9 +21,8 @@
     <script>
     $('.dropdown-toggle').dropdown()
     </script>
-</head>
 
-<body>
+
     <%= yield %>
 </body>
 

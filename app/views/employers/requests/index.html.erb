@@ -1,0 +1,37 @@
+<div class="container request-page">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row request-all">
+        <table class="table request-table">
+            <tr>
+                <th>申請者</th>
+                <th>希望報酬</th>
+                <th>予定納品日</th>
+                <th>申請状況</th>
+            </tr>
+            <% @offer.requests.each do |request| %>
+            <tr>
+                <td>
+                    <%= request.creater.name %>
+                </td>
+                <td>
+                    <%= request.hope_salary %>円
+                </td>
+                <td>
+                    契約から<%= request.production_span %>日以内
+                </td>
+                <td>
+                    <%= request.request_status%>
+                </td>
+                <td>
+                    <%= link_to employers_offer_request_path(@offer,request) do %>
+                    <i class="fas fa-arrow-circle-right request-icon"></i>
+                    <% end %>
+                </td>
+            </tr>
+            <% end %>
+        </table>
+    </div>
+</div>

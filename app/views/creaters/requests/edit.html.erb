@@ -1,0 +1,56 @@
+<div class="container emp-offer">
+    <div class="row">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row emp-offer-box">
+        <div class="col-xs-10">
+            <h2>申請内容</h2>
+            <table class="table">
+                <tr class="emp-offer-deadline">
+                    <th class="col-xs-2">申請先</th>
+                    <td class="col-xs-4">
+                        <%= link_to creaters_offer_path(@offer) do %>
+                        <%= @offer.title %>
+                        <% end %>
+                    </td>
+                <tr class="emp-offer-content">
+                    <th class="col-xs-2">申請内容</th>
+                    <td class="col-xs-4">
+                        <%= simple_format(@request.opinion) %>
+                    </td>
+                </tr>
+                <tr class="emp-offer-deadline">
+                    <th class="col-xs-2">希望報酬</th>
+                    <td class="col-xs-4">
+                        <p>
+                            <%= @request.hope_salary %>円
+                        </p>
+                    </td>
+                </tr>
+                <tr class="emp-offer-delivery">
+                    <th class="col-xs-2">予定製作日数</th>
+                    <td>
+                        <p>
+                            <%= @request.production_span %>日程度
+                        </p>
+                    </td>
+                </tr>
+                <tr class="emp-offer-wage">
+                    <th class="col-xs-2">申請日</th>
+                    <td>
+                        <%= @request.created_at.strftime('%m月%d日') %>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-xs-2">
+            <%= link_to creaters_offer_request_path(@request), method: :delete, data: { confirm: '削除しますか？' } do %>
+            <div class="edit-request">
+                <p class="edit-request-font">申請取消</p>
+                <i class="fas fa-trash-alt edit-request-icon"></i>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>

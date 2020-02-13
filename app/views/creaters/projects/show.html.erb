@@ -1,0 +1,50 @@
+<div class="container project-show">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+    </div>
+    <%= render 'shared/flash' %>
+    <div class="row emp-offer-box">
+        <div class="col-xs-10">
+            <h2>受注内容</h2>
+            <table class="table">
+                <tr class="emp-offer-content">
+                    <th class="col-xs-2">概要</th>
+                    <td class="col-xs-4">
+                        <%= simple_format(@project.demand) %>
+                    </td>
+                </tr>
+                <tr class="emp-offer-deadline">
+                    <th class="col-xs-2">期限</th>
+                    <td class="col-xs-4">
+                        <%= @project.time_limit.strftime('%m/%d') %>
+                    </td>
+                </tr>
+                <tr class="emp-offer-payment">
+                    <th class="col-xs-2">報酬</th>
+                    <td>
+                        <%= @project.reward %>円
+                    </td>
+                </tr>
+                <tr class="emp-offer-payday">
+                    <th class="col-xs-2">受注ステータス</th>
+                    <td>
+                        <% if @project.project_status == 0 %>
+                        <p>製作中</p>
+                        <% else %>
+                        <p>契約完了</p>
+                        <% end %>
+                    </td>
+                </tr>
+            </table>
+            <% if @project.project_status == 0 %>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="col-xs-6"></div>
+                    <%= link_to(creaters_project_path(project_status: 1, authenticity_token: form_authenticity_token),method: :patch) do %>
+                    <button class="btn btn-success col-xs-2">製作完了</button>
+                    <% end %>
+                </div>
+            </div>
+            <% end %>
+        </div>
+    </div>

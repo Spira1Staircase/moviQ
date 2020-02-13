@@ -1,0 +1,34 @@
+<div class="container emp-cre">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+    </div>
+    <div class="row">
+        <table class="table">
+            <tr>
+                <th>お名前</th>
+                <th>居住地</th>
+                <th>対応ステータス</th>
+                <th>キャリア</th>
+            </tr>
+            <% @creaters.each do |creater| %>
+            <tr>
+                <td>
+                    <%= link_to employers_creater_path(creater) do %>
+                    <%= creater.name %>
+                    (<%= creater.kana_name %>)
+                    <% end %>
+                </td>
+                <td>
+                    <%= creater.address %>
+                </td>
+                <td>
+                    <%= creater.creater_status%>
+                </td>
+                <td>
+                    <%= creater.career %>
+                </td>
+            </tr>
+            <% end %>
+        </table>
+    </div>
+</div>

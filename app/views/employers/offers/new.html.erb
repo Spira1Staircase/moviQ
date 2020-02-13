@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row offer-form">
+    	<h2 class="offer-title">発注内容</h2>
+        <% if @offer.errors.any? %>
+        <div class="alert alert-warning">
+            <ul>
+                <% @offer.errors.full_messages.each do |message| %>
+                <li>
+                    <%= message %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+        <% end %>
+        <div class="col-xs-12">
+            <table class="table">
+                <%= form_for(@offer, url:employers_offers_path) do |f| %>
+                <tr>
+                    <th>タイトル</th>
+                    <td>
+                        <%= f.text_field :title, autofocus: true, autocomplete: "delivery_address", class: "title-form" %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>発注内容</th>
+                    <td>
+                        <%= f.text_area :content, autofocus: true, autocomplete: "delivery_address", class: "content-form" %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>募集期限</th>
+                    <td>
+                        <%= f.date_field :deadline, autofocus: true, autocomplete: "delivery_address", class: "deadline-form" %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>納品日</th>
+                    <td>
+                        <%= f.date_field :delivery_date, autofocus: true, autocomplete: "delivery_address", class: "delivery-form" %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>報酬</th>
+                    <td>
+                        <p>
+                            <%= f.text_field :wage, autofocus: true, autocomplete: "delivery_address", class: "wage-form" %>円
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>支払い方法</th>
+                    <td>
+                        <%= f.text_field :payment_method, autofocus: true, autocomplete: "delivery_address", class: "payment-form" %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>支払い期日</th>
+                    <td>
+                        <p>
+                            <%= f.number_field :payday, autofocus: true, autocomplete: "delivery_address", class: "payday-form" %>日以内(納品後)
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="offer-btn">
+        <%= f.submit "上記内容で登録する", class: "btn btn-primary" %>
+        <% end %>
+        </div>
+    </div>
+</div>

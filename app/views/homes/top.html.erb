@@ -1,1 +1,27 @@
-<%= render 'shared/header' %>
+<div class="top">
+	<%= render 'shared/header' %>
+	<div class="container">
+			<%= render 'shared/flash' %>
+		<div class="row top-box">
+			<%= link_to new_creater_registration_path do %>
+			<div class="col-xs-3 creater-box">
+				<div class="creater-invite">
+					<h3 class="creater-font">クリエイター</h3>
+				</div>
+			</div>
+			<% end %>
+			<div class="col-xs-6">
+				<div class="center-box">
+					<img class="center-img"  src="<%= asset_path "arrow.png" %>">
+				</div>
+			</div>
+			<%= link_to new_employer_registration_path do %>
+			<div class="col-xs-3 employer-box">
+				<div class="employer-invite">
+					<h3 class="employer-font">クライアント<h3>
+				</div>
+			</div>
+			<% end %>
+		</div>
+	</div>
+</div>

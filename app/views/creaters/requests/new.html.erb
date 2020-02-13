@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row request-form">
+    	<h2 class="request-title">申請内容</h2>
+        <% if @request.errors.any? %>
+        <div class="alert alert-warning">
+            <ul>
+                <% @request.errors.full_messages.each do |message| %>
+                <li>
+                    <%= message %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+        <% end %>
+        <div class="col-xs-12">
+            <table class="table">
+                <%= form_for(@request, url:creaters_offer_requests_path) do |f| %>
+                <tr>
+                    <th>申請内容</th>
+                    <td>
+                        <%= f.text_area :opinion, autofocus: true, autocomplete: "申請内容", class: "opinion-form" %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>希望報酬</th>
+                    <td>
+                        <%= f.text_field :hope_salary, autofocus: true, autocomplete: "希望報酬", class: "salary-form" %>円
+                    </td>
+                </tr>
+                <tr>
+                    <th>必要日数</th>
+                    <td>
+                        <p>契約後
+                            <%= f.number_field :production_span, autofocus: true, autocomplete: "必要日数", class: "production-form" %>日程度
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="request-btn">
+        <%= f.submit "上記内容で登録する", class: "btn btn-primary" %>
+        <% end %>
+        </div>
+    </div>
+</div>
