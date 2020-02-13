@@ -10,7 +10,6 @@ class CreateOffers < ActiveRecord::Migration[5.2]
       t.string  :payment_method, null: false, default: ""
       t.integer :payday, null: false, default: ""
       t.integer :offer_status, null: false, default: 0
-
       t.timestamps
     end
   end
