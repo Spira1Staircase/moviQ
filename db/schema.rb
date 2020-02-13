@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_13_085905) do
+ActiveRecord::Schema.define(version: 2020_02_13_091757) do
 
   create_table "creaters", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -76,9 +76,9 @@ ActiveRecord::Schema.define(version: 2020_02_13_085905) do
   end
 
   create_table "requests", force: :cascade do |t|
-    t.integer "creater_id", null: false
-    t.integer "offer_id", null: false
-    t.text "opinion", default: "", null: false
+    t.integer "creater_id"
+    t.integer "offer_id"
+    t.text "opinion"
     t.integer "request_status", default: 0, null: false
     t.integer "hope_salary", default: 0, null: false
     t.integer "production_span", default: 1, null: false
