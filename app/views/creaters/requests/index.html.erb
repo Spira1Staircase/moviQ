@@ -1,0 +1,42 @@
+<div class="container request-page">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row request-all">
+        <table class="table request-index-table">
+            <tr class="request-line">
+                <th class="request-line">申請先</th>
+                <th class="request-line">希望報酬</th>
+                <th class="request-line">予定納品日</th>
+                <th class="request-line">申請状況</th>
+            </tr>
+            <% @creater.requests.each do |request| %>
+            <tr class="request-line">
+                <td class="request-title">
+                    <%= link_to creaters_offer_path(request.offer_id) do %>
+                    <%= request.offer.title %>
+                    <% end %>
+                </td>
+                <td class="request-collum">
+                    <%= request.hope_salary %>円
+                </td>
+                <td class="request-collum">
+                    <%= request.production_span %>日程度
+                </td>
+                <td class="request-collum">
+                    <%= request.request_status%>
+                </td>
+                <td class="request-collum">
+                    <%= link_to edit_creaters_offer_request_path(request.offer_id,request) do %>
+                    <i class="fas fa-arrow-circle-right request-icon"></i>
+                    <% end %>
+                </td>
+            </tr>
+            <% end %>
+        </table>
+        <div class="col-xs-12 page">
+            <%= paginate @requests %>
+        </div>
+    </div>
+</div>

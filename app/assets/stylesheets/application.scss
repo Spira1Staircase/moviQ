@@ -1,0 +1,660 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: image-url("movie.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    background-position: center;
+}
+img {
+    -webkit-filter: brightness(0.4);
+    -moz-filter: brightness(0.4);
+    -o-filter: brightness(0.4);
+    -ms-filter: brightness(0.4);
+    filter: brightness(100);
+}
+.alert {
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.flash{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+.navbar {
+    background-color: rgba(255, 0, 0, 0);
+    height: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar-brand {
+    border-radius: 20px;
+}
+
+.menu-btn {
+    vertical-align: middle;
+}
+
+.menu-font {
+    background-color: white;
+}
+
+.header {
+    padding-bottom: 70px;
+}
+
+.sign-form {
+    padding: 100px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.field {
+    height: 50px;
+}
+
+.name-form {
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.kana-form {
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.mail-form {
+    width: 250px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.career-form {
+    width: 45px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.age-form {
+    width: 45px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+rails .pass-form {
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.start_view {
+    background-image: image-url("camera.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 115%;
+   	background-position: center;
+}
+
+.submit-btn {
+    padding: 50px;
+    margin: 0 auto;
+}
+.submit-btn-type{
+	width: 200px;
+}
+
+.movie-form {
+    padding-top: 80px;
+}
+
+.top-box {
+    background-image: image-url("shaking.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 112%;
+    background-position: center;
+}
+
+.center-img {
+    background-size: cover;
+    width: 150%;
+    position: absolute;
+    right: -25%;
+    padding-top: 30%;
+    color: blue;
+}
+
+.creater-box {
+    height: 100%;
+    padding: 30px;
+    margin-top: 28%;
+    border-radius: 100px;
+}
+
+.creater-invite {
+    background-image: image-url("creater.png");
+    background-size: cover;
+    height: 305px;
+    width: 310px;
+    text-align: center;
+    position: absolute;
+    right: -55%;
+    top: 17%;
+    margin-top: 75px;
+}
+
+.creater-font {
+    padding-top: 300px;
+    color: white;
+}
+
+.employer-invite {
+    background-image: image-url("employer.png");
+    background-size: cover;
+    text-align: center;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    left: -130%;
+    top: 17%;
+    margin-top: 75px;
+}
+
+.employer-box {
+    height: 100%;
+    padding: 30px;
+    margin-top: 28%;
+    border-radius: 100px;
+}
+
+.employer-font {
+    padding-top: 300px;
+    color: white;
+}
+
+.container {
+    padding-top: 70px;
+}
+.emp-menu {
+    background-color: #81D4FA;
+    background-color: rgba(0, 230, 255, 0.6);
+    height: 260px;
+    width: 35%;
+    margin: 65px;
+    border-radius: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.glyphicon-user {
+    font-size: 30px;
+}
+
+.emp-icon {
+    font-size: 135px;
+    color: white;
+    padding: 10%;
+}
+
+.emp-menu-font {
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+}
+
+.emp-summary {
+    height: 500px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.emp-name {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.emp-cre {
+    background-image: image-url("man.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 115%;
+}
+
+.emp-cre-box {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 700px;
+    margin: 10px auto;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.emp-cre-profile1 {
+    height: 100px;
+    color: black;
+}
+
+.emp-cre-profile2 {
+    height: 200px;
+    color: black;
+}
+
+.emp-cre-movie {
+    height: 500px;
+    color: black;
+}
+
+.submit-btn {
+    height: 30px;
+}
+.offer-index{
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 85%;
+    height: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 80px;
+    border-radius: 30px;
+}
+.offer-title {
+    text-align: center;
+}
+
+.offer-form {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    margin: 10px auto;
+    height: 650px;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.title-form {
+    width: 50%;
+    height: 20px;
+}
+
+.content-form {
+    width: 600px;
+    height: 230px;
+}
+
+.deadline-form {
+    width: 20%;
+    height: 20px;
+}
+
+.delivery-form {
+    width: 20%;
+    height: 20px;
+}
+
+.wage-form {
+    width: 20%;
+    height: 20px;
+}
+
+.payment-form {
+    width: 20%;
+    height: 20px;
+}
+
+.payday-form {
+    width: 20%;
+    height: 15px;
+}
+
+.offer-btn {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.emp-offer-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 100px;
+    height: 90%;
+}
+.emp-offer-all {
+    height: 100%;
+    color: black;
+}
+
+.emp-offer-title {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-content {
+    height: 300px;
+    color: black;
+}
+
+.emp-offer-deadline {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-delivery {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-wage {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-payment {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-payday {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-status {
+    height: 8%;
+    color: black;
+}
+.offer-edit{
+	background-color: rgba(0, 255, 255, 0.8);
+	width:120px;
+	height: 120px;
+	border-radius: 60px;
+}
+.offer-edit-font{
+	font-size: 20px;
+	color: white;
+	padding-top: 15px;
+	text-align: center;
+}
+.offer-edit-icon{
+	font-size: 50px;
+	color: white;
+	margin-top: 10px;
+	margin-left: 35px;
+}
+.offer-update{
+	margin-right: 150px;
+}
+.offer-destroy{
+	margin-left: 150px;
+}
+.offer-request{
+	background-color: rgba(0, 200, 255, 0.8);
+	margin-top: 50px;
+	width:120px;
+	height: 120px;
+	border-radius: 60px;
+}
+.offer-request-font{
+	font-size: 20px;
+	color: white;
+	padding-top: 20px;
+	text-align: center;
+}
+.offer-request-icon{
+	font-size: 60px;
+	color: white;
+	margin-left: 25px;
+}
+.request-page {
+    background-image: image-url("shaking.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 112%;
+	background-position: center;
+}
+.request-all{
+	background-color: rgba(255, 255, 255, 0.8);
+	margin: 50px auto 0;
+	border-radius: 60px;
+	height: 85%;
+    width: 80%;
+}
+.request-table{
+	padding: 100px;
+	width: 80%;
+	height:90%;
+	margin: 0 auto;
+}
+.request-icon{
+	font-size: 20px;
+}
+
+.cre-menu {
+    background-color: #81D4FA;
+    background-color: rgba(0, 230, 255, 0.6);
+    height: 260px;
+    width: 35%;
+    margin: 50px;
+    border-radius: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+.cre-menu-font {
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+}
+.cre-icon {
+    font-size: 135px;
+    color: white;
+    padding: 10%;
+}
+.cre-offer-title{
+	width: 40%;
+}
+.cre-offer-info{
+	width: 10%;
+}
+
+.request-form {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    margin: 50px auto 0;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.opinion-form {
+	width: 700px;
+    height: 400px;
+}
+
+.salary-form {
+    width: 10%;
+}
+
+.production-form {
+    width: 10%;
+}
+
+.request-btn {
+    margin: 0 auto;
+    text-align: center;
+}
+.request-index-table{
+	margin-top: 50px;
+	width: 90%;
+}
+.request-line{
+	height: 30px;
+	text-align: center;
+}
+.request-title{
+	width: 40%;
+    text-align: center;
+}
+.request-collum{
+	width: 10%;
+}
+.edit-request{
+	background-color: rgba(255, 0, 0, 0.8);
+	margin-top: 50px;
+	width:120px;
+	height: 120px;
+	border-radius: 60px;
+}
+.edit-request-font{
+	font-size: 20px;
+	color: white;
+	padding-top: 20px;
+	text-align: center;
+}
+.edit-request-icon{
+	font-size: 60px;
+	color: white;
+	margin-left: 32px;
+}
+.cre-edit{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto 0;
+    border-radius: 60px;
+    height: 85%;
+    width: 100%;
+}
+.cre-edit-table{
+    height: 85%;
+    width: 100%;
+}
+.cre-edit-title{
+    text-align: center;
+}
+.cre-name{
+    width: 40%;
+}
+.cre-address{
+    width: 80%;
+}
+.cre-email{
+    width: 80%;
+}
+.cre-career{
+    width: 20%;
+}
+.cre-cost{
+    width: 20%;
+}
+.cre-age{
+    width: 20%;
+}
+.cre-url{
+    width: 100%;
+}
+.cre-intro{
+    width: 100%;
+    height: 400px;
+}
+.cre-edit-btn{
+    margin: 100px auto;
+}
+.cancel-box{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 100px;
+    padding: 100px;
+    border-radius: 50px;
+}
+.cancel-text{
+    margin: 50px 0;
+}
+.cancel-btn{
+    padding-top: 200px;
+}
+.cre-show{
+    height: 95%;
+}
+.show-request{
+    background-color: rgba(0, 230, 230, 0.8);
+    margin-top: 50px;
+    width:120px;
+    height: 120px;
+    border-radius: 60px;
+}
+.show-request-font{
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+.show-request-icon{
+    font-size: 60px;
+    color: white;
+    margin-left: 25px;
+}
+.request-delete{
+    margin-top: 50px;
+}
+.project-finish{
+    margin: 0 auto;
+}
+.cancel-font{
+    padding: 200px;
+    color: white;
+}
+.cre-box{
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 70%;
+    height: 750px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 100px;
+}
+.emp-cre-intro{
+    height: 350px;
+}
+.cre-profile{
+    background-image: image-url("man.jpg");
+    background-size: cover;
+    width: 100%;
+    margin-top: 100px;
+}
+.page{
+    margin: 0 auto;
+    text-align: center;
+}
+.top-group{
+    margin: 10px auto;
+    height: 360px;
+    border-radius: 20px;
+}
+.top-text-cre{
+    color: white;
+}
+.top-text-emp{
+    color: white;
+}
+.about-text-emp{
+    margin-top: 200px;
+}
+.about-text-cre{
+    margin-top: 150px;
+}

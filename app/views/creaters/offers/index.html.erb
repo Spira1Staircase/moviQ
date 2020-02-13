@@ -1,0 +1,45 @@
+<div class="container offer-index">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row">
+        <table class="table table-hover">
+            <tr>
+                <th class="cre-offer-title">タイトル</th>
+                <th class="cre-offer-info">募集締切</th>
+                <th class="cre-offer-info">納品予定日</th>
+                <th class="cre-offer-info">報酬</th>
+                <th class="cre-offer-info">ステータス</th>
+                <th class="cre-offer-info">　</th>
+            </tr>
+            <% @offers.each do |offer| %>
+            <tr>
+                <td class="cre-offer-title">
+                    <%= offer.title %>
+                </td>
+                <td class="cre-offer-info">
+                    <%= offer.deadline.strftime('%Y/%m/%d') %>
+                </td>
+                <td class="cre-offer-info">
+                    <%= offer.delivery_date.strftime('%Y/%m/%d') %>
+                </td>
+                <td class="cre-offer-info">
+                    <%= offer.wage %>円
+                </td>
+                <td class="cre-offer-info">
+                    <%= offer.offer_status %>
+                </td>
+                <td class="cre-offer-info">
+                    <%= link_to creaters_offer_path(offer) do %>
+                    <i class="fas fa-arrow-circle-right request-icon"></i>
+                    <% end %>
+                </td>
+            </tr>
+            <% end %>
+        </table>
+        <div class="col-xs-12 page">
+        <%= paginate @offers %>
+        </div>
+    </div>
+</div>

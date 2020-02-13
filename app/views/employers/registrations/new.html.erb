@@ -1,6 +1,7 @@
 <div class="container start_view">
   <div class="row　header">
   <%= render 'shared/header' %>
+  <%= render 'shared/flash' %>
   </div>
   <div class="row sign-form">
     <h2><strong>クライアントの方はこちら</strong></h2>
@@ -29,7 +30,7 @@
       </div>
 
       <div class="submit-btn col-xs-12">
-        <%= f.submit "登録する", class: "btn btn-info col-xs-8" %>
+        <%= f.submit "登録する", class: "btn btn-info" %>
       </div>
     <% end %>
   </div>

@@ -14,18 +14,32 @@ Rails.application.routes.draw do
   root to: "homes#top"
   get '/about', to: 'homes#about'
   root 'articles#index'
-  resources :articles
+
+  namespace :creaters do
+    resources :projects, only: [:index,:show, :edit, :update, :destroy]
+    resources :offers do
+      resources :requests, only: [:new, :create, :edit, :update, :destroy]
+    end
+    get '/requests', to: 'requests#index'
+  end
 
   resources :creaters do
-    resources :requests
-    resources :projects
-    resources :offers
+    patch :creater_status
+    get '/cancel', to: 'creaters#cancel'
+  end
+
+  namespace :employers do
+    resources :creaters, only: [:index, :show]
+    resources :offers, only: [:index, :show, :new, :create, :edit, :update] do
+      resources :requests, only: [:index, :show, :edit, :update, :destroy] do
+          resources :projects, only: [:new, :create, :destroy]
+      end
+    end
   end
 
   resources :employers do
-    resources :creaters
-    resources :offers
-    resources :requests
+    patch :employer_status
+    get '/cancel', to: 'employers#cancel'
   end
 
 end

@@ -1,0 +1,20 @@
+<div class="container" style="padding: 50px;">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row">
+        <h3 class="col-xs-12 text-center cancel-font">退会すると今後ログインが出来なくなります<br>
+        本当に退会しますか？
+        </h3>
+    </div>
+    <div class="row cancel-button">
+        <%= form_for(@employer) do |f| %>
+        <%= link_to employer_path(@employer) do %>
+        <p class="btn btn-lg btn-primary col-xs-2">退会しない</p>
+        <% end %>
+        <div class="col-xs-8"></div>
+        <%= link_to "退会する", employer_employer_status_path(current_employer),method: :patch, class: "btn btn-lg btn-danger col-xs-2" %>
+        <% end %>
+    </div>
+</div>

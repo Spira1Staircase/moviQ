@@ -1,0 +1,2 @@
+module Employers::ProjectsHelper
+end

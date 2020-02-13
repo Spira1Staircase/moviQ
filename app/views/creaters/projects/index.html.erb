@@ -1,0 +1,41 @@
+<div class="container offer-index">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+    </div>
+    <%= render 'shared/flash' %>
+    <div class="row">
+        <table class="table table-hover">
+            <tr>
+                <th class="cre-offer-title">タイトル</th>
+                <th class="cre-offer-info">締切</th>
+                <th class="cre-offer-info">ステータス</th>
+                <th class="cre-offer-info">　</th>
+            </tr>
+            <% @projects.each do |project| %>
+            <tr>
+                <td class="cre-offer-title">
+                    <%= project.request.offer.title %>
+                </td>
+                <td class="cre-offer-info">
+                    <%= project.time_limit.strftime('%m/%d') %>
+                </td>
+                <td class="cre-offer-info">
+                    <% if project.project_status == 0 %>
+                    <p>製作中</p>
+                    <% else %>
+                    <p>契約完了</p>
+                    <% end %>
+                </td>
+                <td class="cre-offer-info">
+                    <%= link_to creaters_project_path(project) do %>
+                    <i class="fas fa-arrow-circle-right request-icon"></i>
+                    <% end %>
+                </td>
+            </tr>
+            <% end %>
+        </table>
+        <div class="col-xs-12 page">
+        <%= paginate @projects %>
+        </div>
+    </div>
+</div>

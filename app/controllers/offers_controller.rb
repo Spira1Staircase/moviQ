@@ -1,3 +1,0 @@
-class OffersController < ApplicationController
-end
-

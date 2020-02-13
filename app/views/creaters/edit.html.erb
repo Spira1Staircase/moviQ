@@ -1,0 +1,153 @@
+<div class="container">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+    </div>
+    <%= render 'shared/flash' %>
+    <div class="row cre-edit">
+        <h1 class="cre-edit-title">登録情報編集</h1>
+        <div class="row cre-edit-table col-xs-12">
+            <%= form_for(@creater) do |f| %>
+            <div class="col-xs-6">
+                <table class="table">
+                    <tr>
+                        <th class="col-xs-2">ユーザー名</th>
+                        <td>
+                            <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "cre-name",value: @creater.name %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-xs-2">カナ名</th>
+                        <td>
+                            <%= f.text_field :kana_name, autofocus: true, autocomplete: "kana_name", class: "cre-name",value: @creater.kana_name %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-xs-2">居住地</th>
+                        <td>
+                            <%= f.text_field :address, autofocus: true, autocomplete: "address", class: "cre-address",value: @creater.address %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-xs-2">メール</th>
+                        <td>
+                            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "cre-email",value: @creater.email %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-xs-2">キャリア</th>
+                        <td>
+                            <%= f.number_field :career, autofocus: true, autocomplete: "career", class: "cre-career",value: @creater.career %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-xs-2">希望報酬</th>
+                        <td>
+                            <%= f.number_field :cost, autofocus: true, autocomplete: "cost", class: "cre-cost",value: @creater.cost %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-xs-2">年齢</th>
+                        <td>
+                            <%= f.number_field :age, autofocus: true, autocomplete: "age", class: "cre-age",value: @creater.age %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-xs-2">スキル</th>
+                        <td>
+                            <%= f.text_area :skill, autofocus: true, autocomplete: "skill", class: "cre-intro",value: @creater.skill %>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-xs-6">
+                <table class="table">
+                    <tr>
+                        <th>紹介文</th>
+                        <td>
+                            <%= f.text_area :introduction,rows: 10, class: "cre-intro",value: @creater.introduction %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>ポートフォリオ<br>
+                            (YouTubeURL)</th>
+                        <td>
+                            <%= f.text_field :youtube_url,rows: 10, class: "cre-url" %>
+                        </td>
+                    </tr>
+                </table>
+                <div class="cre-edit-btn">
+                    <div class="col-xs-3"></div>
+                    <%= f.submit "更新する", class: "btn btn-primary col-xs-2" %>
+                    <div class="col-xs-4"></div>
+                    <%= link_to creater_cancel_path(current_creater) do %>
+                    <p class="btn btn-danger">退会する</p>
+                    <% end %>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container cre-profile">
+    <div class="row cre-box">
+        <div class="col-xs-10">
+            <div class="col-xs-5">
+                <table class="table">
+                    <tr class="emp-cre-profile1">
+                        <th class="col-xs-2">お名前(カナ名)</th>
+                        <td class="col-xs-4">
+                            <%= @creater.name %>
+                            <%= @creater.kana_name %>
+                        </td>
+                    </tr>
+                    <tr class="emp-cre-profile1">
+                        <th class="col-xs-2">メールアドレス</th>
+                        <td class="col-xs-4">
+                            <%= @creater.email %>
+                        </td>
+                    </tr>
+                    <tr class="emp-cre-profile1">
+                        <th class="col-xs-2">居住地</th>
+                        <td class="col-xs-4">
+                            <%= @creater.address %>
+                        </td>
+                    </tr>
+                    <tr class="emp-cre-profile1">
+                        <th class="col-xs-2">キャリア</th>
+                        <td>
+                            <%= @creater.career %>
+                        </td>
+                    </tr>
+                    <tr class="emp-cre-profile1">
+                        <th class="col-xs-2">対応ステータス</th>
+                        <td>
+                            <%= @creater.creater_status%>
+                        </td>
+                    </tr>
+                    <tr class="emp-cre-profile2">
+                        <th class="col-xs-2">スキル</th>
+                        <td>
+                            <%= simple_format(@creater.skill) %>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-xs-7">
+                <table class="table">
+                    <tr class="emp-cre-intro">
+                        <th class="">自己紹介</th>
+                        <td>
+                            <%= simple_format(@creater.introduction) %>
+                        </td>
+                    </tr>
+                    <tr class="emp-cre-movie">
+                        <th class="">ポートフォリオ</th>
+                        <td>
+                            <iframe width="400" height="250" src="https://www.youtube.com/embed/<%= @creater.youtube_url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

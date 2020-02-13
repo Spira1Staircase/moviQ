@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row　header">
+        <%= render 'shared/header' %>
+        <%= render 'shared/flash' %>
+    </div>
+    <div class="row">
+        <h1>登録情報編集</h1>
+        <% if @employer.errors.any? %>
+        <div id="error_explanation">
+            <h2>
+                <%= @employer.errors.count %>件のエラーが発生しました。</h2>
+            <ul>
+                <% @employer.errors.full_messages.each do |message| %>
+                <li>error
+                    <%= message %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+        <% end %>
+        <div class="row mypage-table col-xs-12">
+            <%= form_for(@employer) do |f| %>
+            <table class="table">
+                <tr>
+                    <th class="col-xs-2">クライアント名</th>
+                    <td class="col-xs-12">
+                        <%= f.text_field :employer_name, autofocus: true, autocomplete: "employer_name", class: "emp-name",value: @employer.employer_name %>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-xs-2">メール</th>
+                    <td>
+                        <%= f.text_field :email, autofocus: true, autocomplete: "email", class: "emp-name",value: @employer.email %>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-xs-2">紹介文</th>
+                    <td class="col-xs-12">
+                        <%= f.text_area :summary,rows: 10, class: "emp-summary",value: @employer.summary %>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="row col-xs-12">
+            <%= f.submit "保存する", class: "btn btn-primary col-xs-1" %>
+            <% end %>
+            <div class="col-xs-10"></div>
+            <%= link_to employer_cancel_path(current_employer) do %>
+            <p class="btn btn-danger col-xs-1">退会する</p>
+            <% end %>
+        </div>
+    </div>
+</div>
+</div>
