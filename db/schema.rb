@@ -53,8 +53,8 @@ ActiveRecord::Schema.define(version: 2020_02_13_094208) do
     t.integer "employer_id"
     t.string "title", default: "", null: false
     t.text "content"
-    t.date "deadline", null: false
-    t.date "delivery_date", null: false
+    t.datetime "deadline", null: false
+    t.datetime "delivery_date", null: false
     t.integer "wage", null: false
     t.string "payment_method", default: "", null: false
     t.integer "payday", null: false
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 2020_02_13_094208) do
     t.integer "creater_id"
     t.integer "project_status", default: 0, null: false
     t.text "demand"
-    t.date "time_limit", null: false
+    t.datetime "time_limit", null: false
     t.integer "reward", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
