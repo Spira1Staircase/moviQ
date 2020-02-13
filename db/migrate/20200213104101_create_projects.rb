@@ -6,7 +6,7 @@ class CreateProjects < ActiveRecord::Migration[5.2]
       t.integer :request_id
       t.integer :project_status, null: false, default: 0
       t.text    :demand
-      t.datetime    :time_limit, null: false, default: ""
+      t.datetime    :time_limit, null: false
       t.integer :reward, null: false, default: ""
       t.timestamps
     end
