@@ -14,7 +14,9 @@
             <% @requests.each do |request| %>
             <tr>
                 <td>
+                    <%= link_to employers_creater_path(request.creater_id) do %>
                     <%= request.creater.name %>
+                    <% end %>
                 </td>
                 <td>
                     <%= request.hope_salary %>円
