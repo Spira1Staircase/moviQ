@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
 
 html {
     width: 100%;
@@ -25,7 +26,10 @@ body {
     width: 100%;
     height: 90%;
     background-position: center;
+    overflow: hidden;
+    font-family: 'Noto Serif JP', sans-serif;
 }
+
 img {
     -webkit-filter: brightness(0.4);
     -moz-filter: brightness(0.4);
@@ -33,17 +37,20 @@ img {
     -ms-filter: brightness(0.4);
     filter: brightness(100);
 }
+
 .alert {
     padding: 7px;
     margin-bottom: 20px;
     border: 1px solid transparent;
     border-radius: 4px;
 }
-.flash{
+
+.flash {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
 }
+
 .navbar {
     background-color: rgba(255, 0, 0, 0);
     height: 70px;
@@ -68,12 +75,16 @@ img {
 
 .sign-form {
     padding: 100px;
-    width: 50%;
     margin: 10px auto;
 }
 
 .field {
     height: 50px;
+    width: 500px;
+}
+
+.new-btn {
+    margin: 0 auto;
 }
 
 .name-form {
@@ -95,18 +106,18 @@ img {
 }
 
 .career-form {
-    width: 45px;
+    width: 60px;
     border-radius: 10px;
     height: 30px;
 }
 
 .age-form {
-    width: 45px;
+    width: 60px;
     border-radius: 10px;
     height: 30px;
 }
 
-rails .pass-form {
+.pass-form {
     width: 150px;
     border-radius: 15px;
     height: 30px;
@@ -117,15 +128,21 @@ rails .pass-form {
     background-size: cover;
     width: 100%;
     height: 115%;
-   	background-position: center;
+    background-position: center;
 }
 
 .submit-btn {
     padding: 50px;
     margin: 0 auto;
 }
-.submit-btn-type{
-	width: 200px;
+
+.submit-btn-type {
+    width: 200px;
+}
+
+.new-btn {
+    width: 200px;
+    margin-top: 0 auto;
 }
 
 .movie-form {
@@ -133,10 +150,7 @@ rails .pass-form {
 }
 
 .top-box {
-    background-image: image-url("shaking.jpg");
     background-size: cover;
-    width: 100%;
-    height: 112%;
     background-position: center;
 }
 
@@ -159,30 +173,24 @@ rails .pass-form {
 .creater-invite {
     background-image: image-url("creater.png");
     background-size: cover;
-    height: 305px;
-    width: 310px;
-    text-align: center;
-    position: absolute;
-    right: -55%;
-    top: 17%;
-    margin-top: 75px;
+    height: 202px;
+    width: 205px;
+    margin: 0 auto 150px;
 }
 
 .creater-font {
-    padding-top: 300px;
     color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 30px;
 }
 
 .employer-invite {
     background-image: image-url("employer.png");
     background-size: cover;
     text-align: center;
-    height: 300px;
-    width: 600px;
-    position: absolute;
-    left: -130%;
-    top: 17%;
-    margin-top: 75px;
+    height: 150px;
+    width: 300px;
+    margin: 180px auto 0;
 }
 
 .employer-box {
@@ -193,13 +201,15 @@ rails .pass-form {
 }
 
 .employer-font {
-    padding-top: 300px;
     color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 30px;
 }
 
 .container {
     padding-top: 70px;
 }
+
 .emp-menu {
     background-color: #81D4FA;
     background-color: rgba(0, 230, 255, 0.6);
@@ -213,6 +223,7 @@ rails .pass-form {
 
 .glyphicon-user {
     font-size: 30px;
+    font-family: 'Noto Serif JP', sans-serif;
 }
 
 .emp-icon {
@@ -225,6 +236,7 @@ rails .pass-form {
     font-size: 30px;
     margin-top: 30px;
     color: white;
+    font-family: 'Noto Serif JP', sans-serif;
 }
 
 .emp-summary {
@@ -271,7 +283,8 @@ rails .pass-form {
 .submit-btn {
     height: 30px;
 }
-.offer-index{
+
+.offer-index {
     background-color: rgba(255, 255, 255, 0.6);
     width: 85%;
     height: 90%;
@@ -280,6 +293,7 @@ rails .pass-form {
     padding: 80px;
     border-radius: 30px;
 }
+
 .offer-title {
     text-align: center;
 }
@@ -340,6 +354,7 @@ rails .pass-form {
     border-radius: 100px;
     height: 90%;
 }
+
 .emp-offer-all {
     height: 100%;
     color: black;
@@ -384,70 +399,86 @@ rails .pass-form {
     height: 8%;
     color: black;
 }
-.offer-edit{
-	background-color: rgba(0, 255, 255, 0.8);
-	width:120px;
-	height: 120px;
-	border-radius: 60px;
+
+.offer-edit {
+    background-color: rgba(0, 255, 255, 0.8);
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
 }
-.offer-edit-font{
-	font-size: 20px;
-	color: white;
-	padding-top: 15px;
-	text-align: center;
+
+.offer-edit-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
 }
-.offer-edit-icon{
-	font-size: 50px;
-	color: white;
-	margin-top: 10px;
-	margin-left: 35px;
+
+.offer-edit-icon {
+    font-size: 50px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 35px;
 }
-.offer-update{
-	margin-right: 150px;
+
+.offer-update {
+    margin-right: 150px;
 }
-.offer-destroy{
-	margin-left: 150px;
+
+.offer-destroy {
+    margin-left: 150px;
 }
-.offer-request{
-	background-color: rgba(0, 200, 255, 0.8);
-	margin-top: 50px;
-	width:120px;
-	height: 120px;
-	border-radius: 60px;
+
+.offer-request {
+    background-color: rgba(0, 200, 255, 0.8);
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
 }
-.offer-request-font{
-	font-size: 20px;
-	color: white;
-	padding-top: 20px;
-	text-align: center;
+
+.offer-request-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
 }
-.offer-request-icon{
-	font-size: 60px;
-	color: white;
-	margin-left: 25px;
+
+.offer-request-icon {
+    font-size: 60px;
+    color: white;
+    margin-left: 25px;
+    font-family: 'Noto Serif JP', sans-serif;
 }
+
 .request-page {
     background-image: image-url("shaking.jpg");
     background-size: cover;
     width: 100%;
     height: 112%;
-	background-position: center;
+    background-position: center;
 }
-.request-all{
-	background-color: rgba(255, 255, 255, 0.8);
-	margin: 50px auto 0;
-	border-radius: 60px;
-	height: 85%;
+
+.request-all {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto 0;
+    border-radius: 60px;
+    height: 85%;
     width: 80%;
 }
-.request-table{
-	padding: 100px;
-	width: 80%;
-	height:90%;
-	margin: 0 auto;
+
+.request-table {
+    padding: 100px;
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
 }
-.request-icon{
-	font-size: 20px;
+
+.request-icon {
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
 }
 
 .cre-menu {
@@ -460,21 +491,27 @@ rails .pass-form {
     vertical-align: middle;
     text-align: center;
 }
+
 .cre-menu-font {
     font-size: 30px;
     margin-top: 30px;
     color: white;
+    font-family: 'Noto Serif JP', sans-serif;
 }
+
 .cre-icon {
     font-size: 135px;
     color: white;
     padding: 10%;
+    font-family: 'Noto Serif JP', sans-serif;
 }
-.cre-offer-title{
-	width: 40%;
+
+.cre-offer-title {
+    width: 40%;
 }
-.cre-offer-info{
-	width: 10%;
+
+.cre-offer-info {
+    width: 10%;
 }
 
 .request-form {
@@ -486,7 +523,7 @@ rails .pass-form {
 }
 
 .opinion-form {
-	width: 700px;
+    width: 700px;
     height: 400px;
 }
 
@@ -502,125 +539,159 @@ rails .pass-form {
     margin: 0 auto;
     text-align: center;
 }
-.request-index-table{
-	margin-top: 50px;
-	width: 90%;
+
+.request-index-table {
+    margin-top: 50px;
+    width: 90%;
 }
-.request-line{
-	height: 30px;
-	text-align: center;
-}
-.request-title{
-	width: 40%;
+
+.request-line {
+    height: 30px;
     text-align: center;
 }
-.request-collum{
-	width: 10%;
+
+.request-title {
+    width: 40%;
+    text-align: center;
 }
-.edit-request{
-	background-color: rgba(255, 0, 0, 0.8);
-	margin-top: 50px;
-	width:120px;
-	height: 120px;
-	border-radius: 60px;
+
+.request-collum {
+    width: 10%;
 }
-.edit-request-font{
-	font-size: 20px;
-	color: white;
-	padding-top: 20px;
-	text-align: center;
+
+.edit-request {
+    background-color: rgba(255, 0, 0, 0.8);
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
 }
-.edit-request-icon{
-	font-size: 60px;
-	color: white;
-	margin-left: 32px;
+
+.edit-request-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
 }
-.cre-edit{
+
+.edit-request-icon {
+    font-size: 60px;
+    color: white;
+    margin-left: 32px;
+}
+
+.cre-edit {
     background-color: rgba(255, 255, 255, 0.8);
     margin: 50px auto 0;
     border-radius: 60px;
     height: 85%;
     width: 100%;
 }
-.cre-edit-table{
+
+.cre-edit-table {
     height: 85%;
     width: 100%;
 }
-.cre-edit-title{
+
+.cre-edit-title {
     text-align: center;
 }
-.cre-name{
+
+.cre-name {
     width: 40%;
 }
-.cre-address{
+
+.cre-address {
     width: 80%;
 }
-.cre-email{
+
+.cre-email {
     width: 80%;
 }
-.cre-career{
+
+.cre-career {
     width: 20%;
 }
-.cre-cost{
+
+.cre-cost {
     width: 20%;
 }
-.cre-age{
+
+.cre-age {
     width: 20%;
 }
-.cre-url{
+
+.cre-url {
     width: 100%;
 }
-.cre-intro{
+
+.cre-intro {
     width: 100%;
     height: 400px;
 }
-.cre-edit-btn{
+
+.cre-edit-btn {
     margin: 100px auto;
 }
-.cancel-box{
+
+.cancel-box {
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: 100px;
     padding: 100px;
     border-radius: 50px;
 }
-.cancel-text{
+
+.cancel-text {
     margin: 50px 0;
 }
-.cancel-btn{
+
+.cancel-btn {
     padding-top: 200px;
 }
-.cre-show{
+
+.cre-show {
     height: 95%;
 }
-.show-request{
+
+.show-request {
     background-color: rgba(0, 230, 230, 0.8);
     margin-top: 50px;
-    width:120px;
+    width: 120px;
     height: 120px;
     border-radius: 60px;
 }
-.show-request-font{
+
+.show-request-font {
     font-size: 20px;
     color: white;
     padding-top: 20px;
     text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
 }
-.show-request-icon{
+
+.show-request-icon {
     font-size: 60px;
     color: white;
     margin-left: 25px;
+    font-family: 'Noto Serif JP', sans-serif;
 }
-.request-delete{
+
+.request-delete {
     margin-top: 50px;
 }
-.project-finish{
+
+.project-finish {
     margin: 0 auto;
 }
-.cancel-font{
+
+.cancel-font {
     padding: 200px;
     color: white;
+    font-family: 'Noto Serif JP', sans-serif;
 }
-.cre-box{
+
+.cre-box {
     background-color: rgba(255, 255, 255, 0.6);
     width: 70%;
     height: 750px;
@@ -628,33 +699,56 @@ rails .pass-form {
     padding: 50px;
     border-radius: 100px;
 }
-.emp-cre-intro{
+
+.emp-cre-intro {
     height: 350px;
 }
-.cre-profile{
+
+.cre-profile {
     background-image: image-url("man.jpg");
     background-size: cover;
     width: 100%;
     margin-top: 100px;
 }
-.page{
+
+.page {
     margin: 0 auto;
     text-align: center;
 }
-.top-group{
+
+.creater-top {
+    height: 700px;
+}
+
+.employer-top {
+    height: 700px;
+}
+
+.top-group {
     margin: 10px auto;
-    height: 360px;
-    border-radius: 20px;
+    height: 100%;
 }
-.top-text-cre{
+
+.emp-text {
+    margin-top: 170px;
+}
+
+.cre-text {
+    margin-bottom: 175px;
+}
+
+.top-text-cre {
     color: white;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px;
 }
-.top-text-emp{
+
+.top-text-emp {
     color: white;
-}
-.about-text-emp{
-    margin-top: 200px;
-}
-.about-text-cre{
-    margin-top: 150px;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px;
 }

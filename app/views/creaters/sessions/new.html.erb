@@ -6,18 +6,24 @@
     </div>
     <!-- ログインフォーム -->
     <div class="row sign-form">
-        <h2><strong>クリエイターの方はこちら</strong></h2>
+        <h3 class="text-center"><strong>クリエイターログイン</strong></h3>
         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <div class="field col-xs-12">
-            <%= f.label :メールアドレス %>
-            <%= f.email_field :email, autocomplete: "メールアドレス", class: "mail-form" %>
-        </div>
-        <div class="field col-xs-12">
-            <%= f.label :"パスワード(6文字以上)" %>
-            <%= f.password_field :password, autocomplete: "パスワード", class: "pass-form" %>
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <table class="col-xs-6">
+                <tr class="field">
+                    <th>メールアドレス</th>
+                    <td><%= f.email_field :email, autocomplete: "メールアドレス", class: "mail-form" %></td>
+                </tr>
+                <tr class="field">
+                    <th>パスワード(6文字以上)</th>
+                    <td><%= f.password_field :password, autocomplete: "パスワード", class: "pass-form" %></td>
+                </tr>
+            </table>
         </div>
         <div class="submit-btn col-xs-12">
-            <%= f.submit "ログイン", class: "btn btn-info col-xs-8 submit-btn-type" %>
+            <div class="col-xs-4"></div>
+            <%= f.submit "ログイン", class: "btn btn-info new-btn" %>
         </div>
         <% end %>
     </div>
