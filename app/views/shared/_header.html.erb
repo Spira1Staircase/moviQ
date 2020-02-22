@@ -45,6 +45,11 @@
                             ログアウト
                             <% end %>
                         </li>
+                        <li>
+                            <%= link_to about_path do %>
+                            About
+                            <% end %>
+                        </li>
                         <!-- エンプロイヤーメニュー -->
                         <% elsif employer_signed_in? %>
                         <li>
@@ -72,6 +77,11 @@
                             ログアウト
                             <% end %>
                         </li>
+                        <li>
+                            <%= link_to about_path do %>
+                            About
+                            <% end %>
+                        </li>
                         <!-- ログイン前 -->
                         <% else %>
                         <li>
@@ -92,6 +102,11 @@
                         <li>
                             <%= link_to new_employer_session_path do %>
                             　　　クライアントログイン
+                            <% end %>
+                        </li>
+                        <li>
+                            <%= link_to about_path do %>
+                            About
                             <% end %>
                         </li>
                         <% end %>
