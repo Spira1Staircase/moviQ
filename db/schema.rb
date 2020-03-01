@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_13_021535) do
+ActiveRecord::Schema.define(version: 2020_02_13_104101) do
 
   create_table "creaters", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -52,33 +52,33 @@ ActiveRecord::Schema.define(version: 2020_02_13_021535) do
   create_table "offers", force: :cascade do |t|
     t.integer "employer_id"
     t.string "title", default: "", null: false
-    t.text "content", default: "", null: false
-    t.date "deadline", null: false
-    t.date "delivery_date", null: false
-    t.integer "wage", null: false
+    t.text "content"
+    t.datetime "deadline", null: false
+    t.datetime "delivery_date", null: false
+    t.integer "wage"
     t.string "payment_method", default: "", null: false
-    t.integer "payday", null: false
+    t.integer "payday"
     t.integer "offer_status", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "projects", force: :cascade do |t|
-    t.integer "creater_id", null: false
-    t.integer "project_status", default: 0, null: false
-    t.text "demand", default: "", null: false
-    t.date "time_limit", null: false
-    t.integer "reward", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "creater_id"
     t.integer "offer_id"
     t.integer "request_id"
+    t.integer "project_status", default: 0, null: false
+    t.text "demand"
+    t.datetime "time_limit", null: false
+    t.integer "reward"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "requests", force: :cascade do |t|
-    t.integer "creater_id", null: false
-    t.integer "offer_id", null: false
-    t.text "opinion", default: "", null: false
+    t.integer "creater_id"
+    t.integer "offer_id"
+    t.text "opinion"
     t.integer "request_status", default: 0, null: false
     t.integer "hope_salary", default: 0, null: false
     t.integer "production_span", default: 1, null: false

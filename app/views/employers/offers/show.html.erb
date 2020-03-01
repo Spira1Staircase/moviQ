@@ -22,13 +22,13 @@
                 <tr class="emp-offer-deadline">
                     <th class="col-xs-2">募集期限</th>
                     <td class="col-xs-4">
-                        <%= @offer.deadline %>
+                        <%= @offer.deadline.strftime('%Y/%m/%d') %>
                     </td>
                 </tr>
                 <tr class="emp-offer-delivery">
                     <th class="col-xs-2">納品日</th>
                     <td>
-                        <%= @offer.delivery_date %>
+                        <%= @offer.delivery_date.strftime('%Y/%m/%d') %>
                     </td>
                 </tr>
                 <tr class="emp-offer-wage">
