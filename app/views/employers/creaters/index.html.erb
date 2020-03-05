@@ -4,6 +4,24 @@
     </div>
     <div class="row">
         <div class="emp-cre-box col-xs-12">
+            <div class="col-xs-12">
+                <%= search_form_for(@q, url:employers_creaters_path) do |f| %>
+                <%= f.label :name, "名前" %>
+                <%= f.search_field :name_cont %><br><br>
+                <%= f.label :address, "居住地" %>
+                <%= f.search_field :address_cont %><br><br>
+                <%= f.label :キャリア %>
+                <%= f.number_field :career_gteq %>年以上〜
+                <%= f.number_field :career_lt %>年未満 <br><br>
+                <%= f.label :対応ステータス %>
+                <%= f.radio_button :creater_status_eq, '', {:checked => true} %>指定なし
+                <%= f.radio_button :creater_status_eq, 0 %>対応可
+                <%= f.radio_button :creater_status_eq, 1 %>退会済み <br>
+                <div class="search-btn">
+                    <%= f.submit "検索", class: "btn btn-info" %>
+                </div>
+                <% end %>
+            </div>
             <table class="table">
                 <tr>
                     <th>お名前</th>
@@ -16,7 +34,8 @@
                     <td>
                         <%= link_to employers_creater_path(creater) do %>
                         <%= creater.name %>
-                        (<%= creater.kana_name %>)
+                        (
+                        <%= creater.kana_name %>)
                         <% end %>
                     </td>
                     <td>

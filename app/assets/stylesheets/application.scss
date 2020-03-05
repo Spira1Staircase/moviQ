@@ -302,7 +302,7 @@ img {
 .offer-index {
     background-color: rgba(255, 255, 255, 0.6);
     width: 90%;
-    height: 90%;
+    height: 150%;
     margin: 0 auto;
     margin-top: 80px;
     padding: 80px;
@@ -519,11 +519,11 @@ img {
 }
 
 .cre-offer-title {
-    width: 40%;
+    width: 30%;
 }
 
 .cre-offer-info {
-    width: 10%;
+    width: 16%;
 }
 
 .request-form {
@@ -904,4 +904,7 @@ img {
 .top-how-btn{
     margin: 0 auto;
     font-family: 'Noto Serif JP', sans-serif;
+}
+.search-btn{
+    padding: 15px;
 }

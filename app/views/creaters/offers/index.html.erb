@@ -4,13 +4,31 @@
         <%= render 'shared/flash' %>
     </div>
     <div class="row">
+        <div class="col-xs-12">
+            <%= search_form_for(@q, url:creaters_offers_path) do |f| %>
+            <%= f.label :title, "キーワード" %>
+            <%= f.search_field :title_cont %><br><br>
+            <%= f.date_field :deadline_gteq %>から
+            <%= f.date_field :deadline_lteq %>まで<br><br>
+            <%= f.label :報酬 %>
+            <%= f.number_field :wage_gteq %>円以上〜
+            <%= f.number_field :wage_lt %>円未満 <br><br>
+            <%= f.label :募集ステータス %>
+            <%= f.radio_button :offer_status_eq, '', {:checked => true} %>指定なし
+            <%= f.radio_button :offer_status_eq, 0 %>募集中
+            <%= f.radio_button :offer_status_eq, 1 %>募集終了 <br>
+            <div class="search-btn">
+                <%= f.submit "検索", class: "btn btn-info" %>
+            </div>
+            <% end %>
+        </div>
         <table class="table table-hover">
             <tr>
                 <th class="cre-offer-title">タイトル</th>
                 <th class="cre-offer-info">募集締切</th>
                 <th class="cre-offer-info">納品予定日</th>
                 <th class="cre-offer-info">報酬</th>
-                <th class="cre-offer-info">ステータス</th>
+                <th class="cre-offer-info">募集ステータス</th>
                 <th class="cre-offer-info">　</th>
             </tr>
             <% @offers.each do |offer| %>
@@ -30,7 +48,7 @@
                 <td class="cre-offer-info">
                     <%= offer.offer_status %>
                 </td>
-                <td class="cre-offer-info">
+                <td>
                     <%= link_to creaters_offer_path(offer) do %>
                     <i class="fas fa-arrow-circle-right request-icon"></i>
                     <% end %>
@@ -39,7 +57,7 @@
             <% end %>
         </table>
         <div class="col-xs-12 page">
-        <%= paginate @offers %>
+            <%= paginate @offers %>
         </div>
     </div>
 </div>
