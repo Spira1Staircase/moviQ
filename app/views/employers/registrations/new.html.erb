@@ -1,19 +1,18 @@
 <div class="container start_view">
     <div class="row　header">
         <%= render 'shared/header' %>
-        <%= render 'shared/flash' %>
+        <%= render "devise/shared/error_messages", resource: resource %>
     </div>
     <div class="row sign-form">
-        <h3 class="text-center"><strong>クライアントの方はこちら</strong></h3>
+        <h3 class="text-center"><strong>Youtuberの方はこちら</strong></h3>
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <%= render "devise/shared/error_messages", resource: resource %>
         <div>
             <div class="col-xs-3"></div>
             <table class="col-xs-6">
                 <tr class="field">
-                    <th class="col-xs-5 text-center">氏名</th>
+                    <th class="col-xs-5 text-center">名前</th>
                     <td>
-                        <%= f.text_field :employer_name, autocomplete: "法人名・事業者名", class: "name-form" %>
+                        <%= f.text_field :employer_name, autocomplete: "", class: "name-form" %>
                     </td>
                 </tr>
                 <tr class="field">

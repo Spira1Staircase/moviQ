@@ -8,6 +8,10 @@ class Creater < ApplicationRecord
 	has_many :requests
 	enum creater_status: {対応可: 0, 退会済: 1}
   validates :creater_status, inclusion: { in: Creater.creater_statuses.keys }
+  validates :name, presence: true
+  validates :kana_name, presence: true
+  validates :career, presence: true
+  validates :email, presence: true
   def self.find_for_authentication(conditions)
     super(conditions.merge(:creater_status => "対応可"))
   end

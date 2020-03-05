@@ -202,8 +202,8 @@ img {
     background-image: image-url("employer.png");
     background-size: cover;
     text-align: center;
-    height: 150px;
-    width: 300px;
+    height: 125px;
+    width: 250px;
     margin-top: 100px;
     margin-left: 25px;
 }
@@ -730,12 +730,14 @@ img {
 
 .creater-top {
     height: 600px;
-    background-color: rgba(0, 255, 255,  0.4);
+    background-color: rgba(0, 255, 255,  0.3);
+    border-radius: 15px;
 }
 
 .employer-top {
-    background-color: rgba(0, 255, 255, 0.4);
+    background-color: rgba(0, 255, 255, 0.3);
     height: 600px;
+    border-radius: 15px;
 }
 
 .top-group {

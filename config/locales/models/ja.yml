@@ -1,0 +1,14 @@
+ja:
+  activerecord:
+    models:
+      creater: 映像クリエイター
+      employer: Youtuber
+    attributes:
+      creater:
+        name: 氏名
+        kana_name: カナ氏名
+        career: キャリア
+        email: メールアドレス
+      employer:
+        email: メールアドレス
+        employer_name: 名前
