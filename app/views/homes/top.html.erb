@@ -5,7 +5,7 @@
     <%= render 'shared/flash' %>
     <div class="row top-group">
         <%= link_to new_creater_registration_path do %>
-        <div class="col-xs-3 creater-top">
+        <div class="col-xs-4 creater-top">
             <div class="creater-invite">
             </div>
             <p class="creater-font text-center">
@@ -18,9 +18,15 @@
             </div>
         </div>
         <% end %>
-        <div class="col-xs-6"></div>
+        <div class="col-xs-4">
+            <%= link_to about_path do %>
+            <div class="top-how-btn">
+                <p class="btn btn-warning col-xs-12">How To Use</p>
+            </div>
+            <% end %>
+        </div>
         <%= link_to new_employer_registration_path do %>
-        <div class="col-xs-3 employer-top">
+        <div class="col-xs-4 employer-top">
             <div class="cre-text">
                 <p class="top-text-cre text-center">映像クリエイターを探す
                 </p>

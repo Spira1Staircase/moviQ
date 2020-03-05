@@ -36,19 +36,19 @@
                     <tr>
                         <th class="col-xs-3">キャリア</th>
                         <td>
-                            <%= f.number_field :career, autofocus: true, autocomplete: "career", class: "cre-career",value: @creater.career %>
+                            <%= f.number_field :career, autofocus: true, autocomplete: "career", class: "cre-career",value: @creater.career %>年
                         </td>
                     </tr>
                     <tr>
                         <th class="col-xs-3">希望報酬</th>
                         <td>
-                            <%= f.number_field :cost, autofocus: true, autocomplete: "cost", class: "cre-cost",value: @creater.cost %>
+                            <%= f.number_field :cost, autofocus: true, autocomplete: "cost", class: "cre-cost",value: @creater.cost %>円程度
                         </td>
                     </tr>
                     <tr>
                         <th class="col-xs-3">年齢</th>
                         <td>
-                            <%= f.number_field :age, autofocus: true, autocomplete: "age", class: "cre-age",value: @creater.age %>
+                            <%= f.number_field :age, autofocus: true, autocomplete: "age", class: "cre-age",value: @creater.age %>歳
                         </td>
                     </tr>
                     <tr>
@@ -98,8 +98,8 @@
                     </tr>
                     <tr class="emp-cre-profile1">
                         <td class="col-xs-4">
-                            <%= @creater.name %>
-                            <%= @creater.kana_name %>
+                            <%= @creater.name %><br>
+                            (<%= @creater.kana_name %>)
                         </td>
                     </tr>
                     <tr>
@@ -123,7 +123,7 @@
                     </tr>
                     <tr class="emp-cre-profile1">
                         <td>
-                            <%= @creater.career %>
+                            <%= @creater.career %>年
                         </td>
                     </tr>
                     <tr>
