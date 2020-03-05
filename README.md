@@ -1,24 +1,41 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション名：moviQ
 
-Things you may want to cover:
+*動画の編集技術を持っている方(映像クリエイター)と動画を編集して欲しい方(YouTuber)をつなぐためのサービス*
 
-* Ruby version
 
-* System dependencies
+## 使用方法
 
-* Configuration
+**映像クリエイター側**
+ *１．自分のプロフィールにスキルや経験、ポートフォリオを記載し、Youtuberへアピールする*
+ *２．発注一覧から自分のスキルや稼働時間に見合ったものを選び申請する*
+ *３．申請がYoutuber側によって許可され、契約したら受注内容のものを制作する*
 
-* Database creation
+ **Youtuber側**
+ *１．自分が求めている条件（発注内容、納期、報酬）を記載し発注する*
+ *２．発注に対して映像クリエイターから申請が来たら内容やスキル等を確認する*
+ *３．発注内容に見合った映像クリエイターと契約し、納品後に報酬を支払う*
 
-* Database initialization
 
-* How to run the test suite
+***アプリケーションURL***
 
-* Services (job queues, cache servers, search engines, etc.)
+[URL](http://moviq.work/)
 
-* Deployment instructions
 
-* ...
+
+## 機能
+ **映像クリエイター側**
+- 機能1　案件検索機能
+- 機能2　プロフィール編集機能
+　　　　（氏名、メールアドレス、居住地、キャリア、スキル、自己紹介、制作した動画（YouTubeからの埋め込み））
+- 機能3　案件に対する申請、申請削除、申請一覧、申請詳細
+- 機能4　受注内容一覧、詳細
+- 機能5　退会機能
+
+ **Youtuber側**
+- 機能1　クリエイター検索機能
+- 機能2　案件の発注、削除、編集、詳細確認機能
+- 機能3　案件に対する申請一覧。詳細確認機能
+- 機能4　申請者との契約、申請拒否機能
+- 機能5　退会機能
