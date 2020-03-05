@@ -1,7 +1,8 @@
 class Employers::CreatersController < ApplicationController
 	before_action :authenticate_employer!
 	def index
-		@creaters = Creater.all.page(params[:page]).per(15)
+		@q = Creater.ransack(params[:q])
+		@creaters = @q.result(distinct: true).page(params[:page]).per(8)
 	end
 	def show
 		@creater = Creater.find(params[:id])

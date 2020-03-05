@@ -1,7 +1,8 @@
 class Creaters::OffersController < ApplicationController
 	before_action :authenticate_creater!
 	def index
-		@offers = Offer.all.page(params[:page]).per(10)
+		@q = Offer.ransack(params[:q])
+		@offers = @q.result(distinct: true).page(params[:page]).per(10)
 	end
 	def show
 		@offer = Offer.find(params[:id])
