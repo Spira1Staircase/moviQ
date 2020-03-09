@@ -16,7 +16,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
-
+@media screen and (min-width:1025px){
 html {
     width: 100%;
     height: 100vh;
@@ -906,4 +906,1790 @@ img {
 }
 .search-btn{
     padding: 15px;
+}
+}
+
+@media screen and (min-width:640px){
+  html {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+body {
+    background-image: image-url("movie.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    background-position: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+img {
+    -webkit-filter: brightness(0.4);
+    -moz-filter: brightness(0.4);
+    -o-filter: brightness(0.4);
+    -ms-filter: brightness(0.4);
+    filter: brightness(100);
+}
+
+.alert {
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.flash {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+
+.navbar {
+    background-color: rgba(255, 0, 0, 0);
+    height: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar-brand {
+    border-radius: 20px;
+}
+
+.menu-btn {
+    vertical-align: middle;
+}
+
+.menu-font {
+    background-color: white;
+}
+
+.header {
+    padding-bottom: 70px;
+}
+
+.login-btn {
+    margin: 0 37%;
+}
+
+.sign-form {
+    padding: 100px;
+    margin: 10px auto;
+}
+
+.field {
+    height: 50px;
+    width: 500px;
+}
+
+.new-btn {
+    margin: 0 auto;
+}
+
+.name-form {
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.kana-form {
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.mail-form {
+    width: 250px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.career-form {
+    width: 60px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.age-form {
+    width: 60px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.pass-form {
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.start_view {
+    background-image: image-url("camera.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 115%;
+    background-position: center;
+}
+
+.submit-btn {
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.submit-btn-type {
+    width: 200px;
+}
+
+.new-btn {
+    width: 200px;
+    margin-top: 0 auto;
+}
+
+.movie-form {
+    padding-top: 80px;
+}
+
+.top-box {
+    background-size: cover;
+    background-position: center;
+}
+
+.about-head {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: white;
+}
+
+.center-img {
+    background-size: cover;
+    width: 150%;
+    position: absolute;
+    right: -25%;
+    padding-top: 30%;
+    color: blue;
+}
+
+.creater-box {
+    height: 100%;
+    padding: 30px;
+    margin-top: 28%;
+    border-radius: 100px;
+}
+
+.creater-invite {
+    background-image: image-url("creater.png");
+    background-size: cover;
+    height: 202px;
+    width: 205px;
+    margin: 0 auto 50px;
+}
+
+.creater-font {
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 30px;
+}
+
+.employer-invite {
+    background-image: image-url("employer.png");
+    background-size: cover;
+    text-align: center;
+    height: 125px;
+    width: 250px;
+    margin: 110px auto 50px;
+}
+
+.employer-box {
+    height: 100%;
+    padding: 30px;
+    margin-top: 28%;
+    border-radius: 100px;
+}
+
+.employer-font {
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 30px;
+}
+
+.container {
+    padding-top: 70px;
+}
+
+.emp-menu {
+    background-color: #81D4FA;
+    background-color: rgba(0, 230, 255, 0.6);
+    height: 260px;
+    width: 35%;
+    margin: 65px;
+    border-radius: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.glyphicon-user {
+    font-size: 30px;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.emp-icon {
+    font-size: 135px;
+    color: white;
+    padding: 10%;
+}
+
+.emp-menu-font {
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.emp-summary {
+    height: 500px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.emp-name {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.emp-cre {
+    background-image: image-url("man.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 115%;
+}
+
+.emp-cre-box {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 700px;
+    margin: 10px auto;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.emp-cre-profile1 {
+    height: 50px;
+    color: black;
+}
+
+.emp-cre-profile2 {
+    height: 200px;
+    color: black;
+}
+
+.emp-cre-movie {
+    height: 500px;
+    color: black;
+}
+
+.submit-btn {
+    height: 30px;
+}
+
+.offer-index {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    height: 150%;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 80px;
+    border-radius: 30px;
+}
+
+.offer-title {
+    text-align: center;
+}
+
+.offer-form {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    margin: 10px auto;
+    height: 650px;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.title-form {
+    width: 50%;
+    height: 20px;
+}
+
+.content-form {
+    width: 600px;
+    height: 230px;
+}
+
+.deadline-form {
+    width: 20%;
+    height: 20px;
+}
+
+.delivery-form {
+    width: 20%;
+    height: 20px;
+}
+
+.wage-form {
+    width: 20%;
+    height: 20px;
+}
+
+.payment-form {
+    width: 20%;
+    height: 20px;
+}
+
+.payday-form {
+    width: 20%;
+    height: 15px;
+}
+
+.offer-btn {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.emp-offer-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 100px;
+    height: 90%;
+}
+
+.emp-offer-all {
+    height: 100%;
+    color: black;
+}
+
+.emp-offer-title {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-content {
+    height: 300px;
+    color: black;
+}
+
+.emp-offer-deadline {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-delivery {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-wage {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-payment {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-payday {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-status {
+    height: 8%;
+    color: black;
+}
+
+.offer-edit {
+    background-color: rgba(0, 255, 255, 0.8);
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.offer-edit-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.offer-edit-icon {
+    font-size: 50px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.offer-update {
+    margin-right: 150px;
+}
+
+.offer-destroy {
+    margin-left: 150px;
+}
+
+.offer-request {
+    background-color: rgba(0, 200, 255, 0.8);
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.offer-request-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.offer-request-icon {
+    font-size: 60px;
+    color: white;
+    margin-left: 25px;
+}
+
+.request-page {
+    background-image: image-url("shaking.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 112%;
+    background-position: center;
+}
+
+.request-all {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto 0;
+    border-radius: 60px;
+    height: 85%;
+    width: 80%;
+}
+
+.request-table {
+    padding: 100px;
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.request-icon {
+    font-size: 20px;
+}
+
+.cre-menu {
+    background-color: #81D4FA;
+    background-color: rgba(0, 230, 255, 0.6);
+    height: 230px;
+    width: 35%;
+    margin: 50px;
+    border-radius: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cre-menu-font {
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.cre-icon {
+    font-size: 135px;
+    color: white;
+    padding: 10%;
+}
+
+.cre-offer-title {
+    width: 30%;
+}
+
+.cre-offer-info {
+    width: 16%;
+}
+
+.request-form {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    margin: 50px auto 0;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.opinion-form {
+    width: 700px;
+    height: 400px;
+}
+
+.salary-form {
+    width: 10%;
+}
+
+.production-form {
+    width: 10%;
+}
+
+.request-btn {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.request-index-table {
+    margin-top: 50px;
+    width: 90%;
+}
+
+.request-line {
+    height: 30px;
+    text-align: center;
+}
+
+.request-title {
+    width: 40%;
+    text-align: center;
+}
+
+.request-collum {
+    width: 10%;
+}
+
+.edit-request {
+    background-color: rgba(255, 0, 0, 0.8);
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.edit-request-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.edit-request-icon {
+    font-size: 60px;
+    color: white;
+    margin-left: 32px;
+}
+
+.cre-edit {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto 0;
+    border-radius: 60px;
+    height: 900px;
+    width: 100%;
+    overflow: auto;
+}
+
+.cre-edit-table {
+    height: 85%;
+    width: 100%;
+}
+
+.cre-edit-title {
+    text-align: center;
+}
+
+.cre-name {
+    width: 40%;
+}
+
+.cre-address {
+    width: 80%;
+}
+
+.cre-email {
+    width: 80%;
+}
+
+.cre-career {
+    width: 20%;
+}
+
+.cre-cost {
+    width: 20%;
+}
+
+.cre-age {
+    width: 20%;
+}
+
+.cre-url {
+    width: 100%;
+}
+
+.cre-intro {
+    width: 100%;
+    height: 400px;
+}
+
+.cre-edit-btn {
+    margin: 100px auto;
+}
+
+.cancel-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 100px;
+    padding: 100px;
+    border-radius: 50px;
+}
+
+.cancel-text {
+    margin: 50px 0;
+}
+
+.cancel-btn {
+    padding-top: 200px;
+}
+
+.cre-show {
+    height: 95%;
+}
+
+.show-request {
+    background-color: rgba(0, 230, 230, 0.8);
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.show-request-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.show-request-icon {
+    font-size: 60px;
+    color: white;
+    margin-left: 25px;
+}
+
+.request-delete {
+    margin-top: 50px;
+}
+
+.project-finish {
+    margin: 0 auto;
+}
+
+.cancel-font {
+    padding: 200px;
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.cre-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    height: 750px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.emp-cre-intro {
+    height: 350px;
+}
+
+.cre-profile {
+    background-image: image-url("man.jpg");
+    background-size: cover;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.page {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.creater-top {
+    height: 600px;
+    background-color: rgba(0, 255, 255,  0.3);
+    border-radius: 15px;
+}
+
+.employer-top {
+    background-color: rgba(0, 255, 255, 0.3);
+    height: 600px;
+    border-radius: 15px;
+}
+
+.top-group {
+    margin: 10px auto;
+    height: 100%;
+}
+
+.emp-text {
+    margin-top: 100px;
+}
+.top-text-emp{
+    color: white;
+}
+.cre-text {
+    margin-bottom: 100px;
+}
+
+.top-text-cre {
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px;
+}
+.about-text-cre{
+    margin-top: 150px;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px;
+}
+
+.about-head {
+    color: white;
+    text-align: center;
+    font: 300 40px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px;
+}
+
+.tabs {
+    width: 85%;
+    height: 800px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.tab-buttons span {
+    font: 400 14px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    border-bottom: 2px solid #ddd;
+    display: block;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.tab-content {
+    border-bottom: 3px solid #ddd;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font: 400 13px 'open sans', sans-serif;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: #333;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+}
+
+#lamp {
+    width: 33.3%;
+    height: 2px;
+    background: silver;
+    display: block;
+    position: absolute;
+    top: 40px;
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+}
+
+#lamp.content2 {
+    left: 33.3%;
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+}
+
+#lamp.content3 {
+    left: 66.6%;
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+}
+
+#lamp.content1 {
+    left: 0;
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+}
+
+.content1 {
+    height: 500px;
+    border-radius: 15px 15px 0px 0px;
+}
+.content1-left{
+    width: 50%
+}
+.content1-right{
+    width: 50%
+}
+.about-cre1 {
+    background-image: image-url("client1.png");
+    background-size: cover;
+    height: 380px;
+    width: 650px;
+    margin: 0 35%;
+}
+.content2 {
+    height: 500px;
+    border-radius: 15px 15px 0px 0px;
+}
+.about-cre2 {
+    background-image: image-url("creater2.png");
+    background-size: cover;
+    height: 400px;
+    width: 670px;
+    margin: 0 35%;
+}
+.content3 {
+    height: 500px;
+    border-radius: 15px 15px 0px 0px;
+}
+.about-cre3 {
+    background-image: image-url("client3.png");
+    background-size: cover;
+    height: 380px;
+    width: 710px;
+    margin: 30px 25%;
+}
+.content-text{
+    font-size: 14px;
+}
+
+.top-text-emp {
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px;
+}
+.top-how-btn{
+    margin: 0 auto;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+.search-btn{
+    padding: 15px;
+}
+}
+@media screen and (min-width:320px){
+  html {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+body {
+    background-image: image-url("movie.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    background-position: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+img {
+    -webkit-filter: brightness(0.4);
+    -moz-filter: brightness(0.4);
+    -o-filter: brightness(0.4);
+    -ms-filter: brightness(0.4);
+    filter: brightness(100);
+}
+
+.alert {
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.flash {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+
+.navbar {
+    background-color: rgba(255, 0, 0, 0);
+    height: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar-brand {
+    border-radius: 20px;
+}
+
+.menu-btn {
+    vertical-align: middle;
+}
+
+.menu-font {
+    background-color: white;
+}
+
+.header {
+    padding-bottom: 70px;
+}
+
+.login-btn {
+    margin: 0 37%;
+}
+
+.sign-form {
+    padding: 100px;
+    margin: 10px auto;
+}
+
+.field {
+    height: 50px;
+    width: 500px;
+}
+
+.new-btn {
+    margin: 0 auto;
+}
+
+.name-form {
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.kana-form {
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.mail-form {
+    width: 250px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.career-form {
+    width: 60px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.age-form {
+    width: 60px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.pass-form {
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.start_view {
+    background-image: image-url("camera.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 115%;
+    background-position: center;
+}
+
+.submit-btn {
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.submit-btn-type {
+    width: 200px;
+}
+
+.new-btn {
+    width: 200px;
+    margin-top: 0 auto;
+}
+
+.movie-form {
+    padding-top: 80px;
+}
+
+.top-box {
+    background-size: cover;
+    background-position: center;
+}
+
+.about-head {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: white;
+}
+
+.center-img {
+    background-size: cover;
+    width: 150%;
+    position: absolute;
+    right: -25%;
+    padding-top: 30%;
+    color: blue;
+}
+
+.creater-box {
+    height: 100%;
+    padding: 30px;
+    margin-top: 28%;
+    border-radius: 100px;
+}
+
+.creater-invite {
+    background-image: image-url("creater.png");
+    background-size: cover;
+    height: 202px;
+    width: 205px;
+    margin: 0 auto 50px;
+}
+
+.creater-font {
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 30px;
+}
+
+.employer-invite {
+    background-image: image-url("employer.png");
+    background-size: cover;
+    text-align: center;
+    height: 125px;
+    width: 250px;
+    margin: 110px auto 50px;
+}
+
+.employer-box {
+    height: 100%;
+    padding: 30px;
+    margin-top: 28%;
+    border-radius: 100px;
+}
+
+.employer-font {
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 30px;
+}
+
+.container {
+    padding-top: 70px;
+}
+
+.emp-menu {
+    background-color: #81D4FA;
+    background-color: rgba(0, 230, 255, 0.6);
+    height: 260px;
+    width: 35%;
+    margin: 65px;
+    border-radius: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.glyphicon-user {
+    font-size: 30px;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.emp-icon {
+    font-size: 135px;
+    color: white;
+    padding: 10%;
+}
+
+.emp-menu-font {
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.emp-summary {
+    height: 500px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.emp-name {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.emp-cre {
+    background-image: image-url("man.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 115%;
+}
+
+.emp-cre-box {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 700px;
+    margin: 10px auto;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.emp-cre-profile1 {
+    height: 50px;
+    color: black;
+}
+
+.emp-cre-profile2 {
+    height: 200px;
+    color: black;
+}
+
+.emp-cre-movie {
+    height: 500px;
+    color: black;
+}
+
+.submit-btn {
+    height: 30px;
+}
+
+.offer-index {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    height: 150%;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 80px;
+    border-radius: 30px;
+}
+
+.offer-title {
+    text-align: center;
+}
+
+.offer-form {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    margin: 10px auto;
+    height: 650px;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.title-form {
+    width: 50%;
+    height: 20px;
+}
+
+.content-form {
+    width: 600px;
+    height: 230px;
+}
+
+.deadline-form {
+    width: 20%;
+    height: 20px;
+}
+
+.delivery-form {
+    width: 20%;
+    height: 20px;
+}
+
+.wage-form {
+    width: 20%;
+    height: 20px;
+}
+
+.payment-form {
+    width: 20%;
+    height: 20px;
+}
+
+.payday-form {
+    width: 20%;
+    height: 15px;
+}
+
+.offer-btn {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.emp-offer-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 100px;
+    height: 90%;
+}
+
+.emp-offer-all {
+    height: 100%;
+    color: black;
+}
+
+.emp-offer-title {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-content {
+    height: 300px;
+    color: black;
+}
+
+.emp-offer-deadline {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-delivery {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-wage {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-payment {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-payday {
+    height: 8%;
+    color: black;
+}
+
+.emp-offer-status {
+    height: 8%;
+    color: black;
+}
+
+.offer-edit {
+    background-color: rgba(0, 255, 255, 0.8);
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.offer-edit-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.offer-edit-icon {
+    font-size: 50px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.offer-update {
+    margin-right: 150px;
+}
+
+.offer-destroy {
+    margin-left: 150px;
+}
+
+.offer-request {
+    background-color: rgba(0, 200, 255, 0.8);
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.offer-request-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.offer-request-icon {
+    font-size: 60px;
+    color: white;
+    margin-left: 25px;
+}
+
+.request-page {
+    background-image: image-url("shaking.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 112%;
+    background-position: center;
+}
+
+.request-all {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto 0;
+    border-radius: 60px;
+    height: 85%;
+    width: 80%;
+}
+
+.request-table {
+    padding: 100px;
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.request-icon {
+    font-size: 20px;
+}
+
+.cre-menu {
+    background-color: #81D4FA;
+    background-color: rgba(0, 230, 255, 0.6);
+    height: 230px;
+    width: 35%;
+    margin: 50px;
+    border-radius: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cre-menu-font {
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.cre-icon {
+    font-size: 135px;
+    color: white;
+    padding: 10%;
+}
+
+.cre-offer-title {
+    width: 30%;
+}
+
+.cre-offer-info {
+    width: 16%;
+}
+
+.request-form {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    margin: 50px auto 0;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.opinion-form {
+    width: 700px;
+    height: 400px;
+}
+
+.salary-form {
+    width: 10%;
+}
+
+.production-form {
+    width: 10%;
+}
+
+.request-btn {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.request-index-table {
+    margin-top: 50px;
+    width: 90%;
+}
+
+.request-line {
+    height: 30px;
+    text-align: center;
+}
+
+.request-title {
+    width: 40%;
+    text-align: center;
+}
+
+.request-collum {
+    width: 10%;
+}
+
+.edit-request {
+    background-color: rgba(255, 0, 0, 0.8);
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.edit-request-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.edit-request-icon {
+    font-size: 60px;
+    color: white;
+    margin-left: 32px;
+}
+
+.cre-edit {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto 0;
+    border-radius: 60px;
+    height: 900px;
+    width: 100%;
+    overflow: auto;
+}
+
+.cre-edit-table {
+    height: 85%;
+    width: 100%;
+}
+
+.cre-edit-title {
+    text-align: center;
+}
+
+.cre-name {
+    width: 40%;
+}
+
+.cre-address {
+    width: 80%;
+}
+
+.cre-email {
+    width: 80%;
+}
+
+.cre-career {
+    width: 20%;
+}
+
+.cre-cost {
+    width: 20%;
+}
+
+.cre-age {
+    width: 20%;
+}
+
+.cre-url {
+    width: 100%;
+}
+
+.cre-intro {
+    width: 100%;
+    height: 400px;
+}
+
+.cre-edit-btn {
+    margin: 100px auto;
+}
+
+.cancel-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 100px;
+    padding: 100px;
+    border-radius: 50px;
+}
+
+.cancel-text {
+    margin: 50px 0;
+}
+
+.cancel-btn {
+    padding-top: 200px;
+}
+
+.cre-show {
+    height: 95%;
+}
+
+.show-request {
+    background-color: rgba(0, 230, 230, 0.8);
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.show-request-font {
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.show-request-icon {
+    font-size: 60px;
+    color: white;
+    margin-left: 25px;
+}
+
+.request-delete {
+    margin-top: 50px;
+}
+
+.project-finish {
+    margin: 0 auto;
+}
+
+.cancel-font {
+    padding: 200px;
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.cre-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    height: 750px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.emp-cre-intro {
+    height: 350px;
+}
+
+.cre-profile {
+    background-image: image-url("man.jpg");
+    background-size: cover;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.page {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.creater-top {
+    height: 600px;
+    background-color: rgba(0, 255, 255,  0.3);
+    border-radius: 15px;
+}
+
+.employer-top {
+    background-color: rgba(0, 255, 255, 0.3);
+    height: 600px;
+    border-radius: 15px;
+}
+
+.top-group {
+    margin: 10px auto;
+    height: 100%;
+}
+
+.emp-text {
+    margin-top: 100px;
+}
+.top-text-emp{
+    color: white;
+}
+.cre-text {
+    margin-bottom: 100px;
+}
+
+.top-text-cre {
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px;
+}
+.about-text-cre{
+    margin-top: 150px;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px;
+}
+
+.about-head {
+    color: white;
+    text-align: center;
+    font: 300 40px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px;
+}
+
+.tabs {
+    width: 85%;
+    height: 800px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.tab-buttons span {
+    font: 400 14px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    border-bottom: 2px solid #ddd;
+    display: block;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.tab-content {
+    border-bottom: 3px solid #ddd;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font: 400 13px 'open sans', sans-serif;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: #333;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+}
+
+#lamp {
+    width: 33.3%;
+    height: 2px;
+    background: silver;
+    display: block;
+    position: absolute;
+    top: 40px;
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+}
+
+#lamp.content2 {
+    left: 33.3%;
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+}
+
+#lamp.content3 {
+    left: 66.6%;
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+}
+
+#lamp.content1 {
+    left: 0;
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+}
+
+.content1 {
+    height: 500px;
+    border-radius: 15px 15px 0px 0px;
+}
+.content1-left{
+    width: 50%
+}
+.content1-right{
+    width: 50%
+}
+.about-cre1 {
+    background-image: image-url("client1.png");
+    background-size: cover;
+    height: 380px;
+    width: 650px;
+    margin: 0 35%;
+}
+.content2 {
+    height: 500px;
+    border-radius: 15px 15px 0px 0px;
+}
+.about-cre2 {
+    background-image: image-url("creater2.png");
+    background-size: cover;
+    height: 400px;
+    width: 670px;
+    margin: 0 35%;
+}
+.content3 {
+    height: 500px;
+    border-radius: 15px 15px 0px 0px;
+}
+.about-cre3 {
+    background-image: image-url("client3.png");
+    background-size: cover;
+    height: 380px;
+    width: 710px;
+    margin: 30px 25%;
+}
+.content-text{
+    font-size: 14px;
+}
+
+.top-text-emp {
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 15px;
+}
+.top-how-btn{
+    margin: 0 auto;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+.search-btn{
+    padding: 15px;
+}
 }
