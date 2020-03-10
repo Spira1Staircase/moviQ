@@ -1,108 +1,106 @@
-<div class="header">
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">
-                    <img alt="Brand" src="<%= asset_path "logo1.png" %>" style="height: 30px; border-radius: 5px; width: 100px;">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarEexample1">
-                <ul class="nav navbar-nav">
-                    <!-- クリエイターメニュー -->
-                    <% if creater_signed_in? %>
-                    <li>
-                        <%= link_to creater_path(current_creater) do %>
-                        マイページ
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to creaters_offers_path do %>
-                        オファーを探す
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to creaters_requests_path do %>
-                        リクエスト一覧
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to creaters_projects_path do %>
-                        受注内容一覧
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to destroy_creater_session_path do %>
-                        ログアウト
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to about_path do %>
-                        使い方
-                        <% end %>
-                    </li>
-                    <!-- エンプロイヤーメニュー -->
-                    <% elsif employer_signed_in? %>
-                    <li>
-                        <%= link_to employer_path(current_employer) do %>
-                        マイページ
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to new_employers_offer_path do %>
-                        仕事を依頼する
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to employers_offers_path do %>
-                        マイオファー
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to employers_creaters_path do %>
-                        クリエイターを探す
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to destroy_employer_session_path do %>
-                        ログアウト
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to about_path do %>
-                        使い方
-                        <% end %>
-                    </li>
-                    <!-- ログイン前 -->
-                    <% else %>
-                    <li>
-                        <%= link_to new_creater_registration_path do %>
-                        <p class="nav-menu">クリエイターの方はこちら</p>
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to  new_employer_registration_path do %>
-                        <p class="nav-menu">Youtuberの方はこちら</p>
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to new_employer_session_path do %>
-                        <p class="nav-menu">Youtuberログイン</p>
-                        <% end %>
-                    </li>
-                    <li>
-                        <%= link_to about_path do %>
-                        <p class="nav-menu">使い方</p>
-                        <% end %>
-                    </li>
-                    <% end %>
-                </ul>
-            </div>
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img alt="Brand" src="<%= asset_path "logo1.png" %>" style="height: 30px; border-radius: 5px; width: 100px;">
+            </a>
         </div>
-    </nav>
-</div>
+        <div class="collapse navbar-collapse" id="navbarEexample1">
+            <ul class="nav navbar-nav">
+                <!-- クリエイターメニュー -->
+                <% if creater_signed_in? %>
+                <li>
+                    <%= link_to creater_path(current_creater) do %>
+                    マイページ
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to creaters_offers_path do %>
+                    オファーを探す
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to creaters_requests_path do %>
+                    リクエスト一覧
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to creaters_projects_path do %>
+                    受注内容一覧
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to destroy_creater_session_path do %>
+                    ログアウト
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to about_path do %>
+                    使い方
+                    <% end %>
+                </li>
+                <!-- エンプロイヤーメニュー -->
+                <% elsif employer_signed_in? %>
+                <li>
+                    <%= link_to employer_path(current_employer) do %>
+                    マイページ
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to new_employers_offer_path do %>
+                    仕事を依頼する
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to employers_offers_path do %>
+                    マイオファー
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to employers_creaters_path do %>
+                    クリエイターを探す
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to destroy_employer_session_path do %>
+                    ログアウト
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to about_path do %>
+                    使い方
+                    <% end %>
+                </li>
+                <!-- ログイン前 -->
+                <% else %>
+                <li>
+                    <%= link_to new_creater_registration_path do %>
+                    <p class="nav-menu">クリエイターの方はこちら</p>
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to  new_employer_registration_path do %>
+                    <p class="nav-menu">Youtuberの方はこちら</p>
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to new_employer_session_path do %>
+                    <p class="nav-menu">Youtuberログイン</p>
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to about_path do %>
+                    <p class="nav-menu">使い方</p>
+                    <% end %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</nav>
