@@ -1,4 +1,4 @@
-<div class="container start_view">
+<div class="container">
     <div class="row　header">
         <%= render 'shared/header' %>
         <%= render 'shared/flash' %>
@@ -53,9 +53,15 @@
             </table>
             <div class="submit-btn col-xs-12">
                 <div class="col-xs-4"></div>
-                <%= f.submit "登録する", class: "btn btn-info new-btn col-xs-4" %>
+                <%= f.submit "登録する", class: "btn btn-info new-btn" %>
             </div>
             <% end %>
+            <div class="submit-btn col-xs-12">
+                <div class="col-xs-4"></div>
+                <%= link_to new_creater_session_path do %>
+                　　　会員登録済みの方はこちら
+                <% end %>
+            </div>
         </div>
     </div>
 </div>
