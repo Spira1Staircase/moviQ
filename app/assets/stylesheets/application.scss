@@ -164,11 +164,6 @@ img {
     padding-top: 80px;
 }
 
-.top-box {
-    background-size: cover;
-    background-position: center;
-}
-
 .about-head {
     text-align: center;
     font-size: 40px;
@@ -945,28 +940,12 @@ img {
 }
 
 @media screen and (max-width:639px){
-.navbar {
-    background-color: rgba(255, 0, 0, 0);
-    height: 70px;
-    padding-bottom: 70px;
-}
 
-.navbar-brand {
-    border-radius: 20px;
+.top-group {
+    margin: 70px auto;
+    height: 100%;
 }
-
-.menu-btn {
-    vertical-align: middle;
-}
-
-.menu-font {
-    background-color: white;
-}
-
-.header {
-    padding-bottom: 70px;
-}
-.navbar-toggle{
-    cursor:pointer;
+.creater-font{
+    font-size: 14px;
 }
 }
